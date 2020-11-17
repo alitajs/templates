@@ -1,0 +1,26 @@
+{
+  "name": "@alitajs-templates/src",
+  "version": "0.0.1",
+  "description": "@alitajs-templates/src",
+  "tplType": "模版的分类，请修改",
+  "tplSubType": "模版的二级分类，请修改",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/src#readme",
+  "private": true
+}
