@@ -1,20 +1,26 @@
 {
-  "name": "@umi-block/empty",
+  "name": "@alitajs-templates/empty",
   "version": "0.0.1",
   "description": "一个空白的页面，一切都从这里开始！",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/umijs/umi-blocks/ant-design-pro/empty"
-  },
-  "license": "ISC",
+  "tplType": "无",
+  "tplSubType": "无",
   "main": "src/index.js",
   "scripts": {
-    "dev": "umi dev"
+    "dev": "alita dev"
   },
-  "peerDependencies": {
-    "@ant-design/pro-layout": "^6.0.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
   },
-  "blockConfig": {
-    "specVersion": "0.1"
-  }
+  "keywords": [
+    "umi",
+    "alita"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/EmptyPage#readme",
+  "private": true
 }

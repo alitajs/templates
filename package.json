@@ -1,8 +1,9 @@
 {
   "private": true,
   "scripts": {
+    "bootstrap": "node ./scripts/bootstrap.js",
     "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
-    "lint-staged": "lint-staged && node ./.script/genBlockConfig.js&& git add ./umi-block.json",
+    "lint-staged": "lint-staged",
     "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty  ./ && npm run lint:style",
     "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./",
@@ -10,13 +11,12 @@
     "lint:style": "stylelint --fix \"**/*.less\" --syntax less",
     "prettier": "prettier -c --write \"**/*\"",
     "screenshot": "pro screenshot",
-    "start": "umi dev",
+    "start": "alita dev",
     "test": "umi test"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint-staged"
-    }
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
   },
   "lint-staged": {
     "**/*.less": "stylelint --syntax less",
@@ -28,33 +28,31 @@
     "**/*.{js,ts,tsx}": "npm run lint-staged:js"
   },
   "dependencies": {
-    "@ant-design/pro-layout": "^6.0.0",
-    "@ant-design/icons": "^4.0.0",
-    "@ant-design/pro-cli": "^1.0.5",
-    "antd": "^4.0.0",
-    "bizcharts": "^3.5.4",
-    "numeral": "^2.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "umi": "^3.2.23",
-    "umi-request": "^1.0.0"
+    "alita": "^2.6.2"
   },
   "devDependencies": {
+    "@testing-library/react": "^10.4.7",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.0.27",
+    "@umijs/test": "^3.2.25",
+    "@umijs/types": "^3.2.25",
+    "@umijs/utils": "^3.2.25",
     "@types/classnames": "^2.2.7",
     "@types/numeral": "^0.0.28",
     "@types/react-dom": "^16.8.4",
     "@umijs/fabric": "^2.0.0",
-    "@umijs/preset-ant-design-pro": "^1.1.2",
-    "@umijs/preset-react": "^1.4.3",
-    "@umijs/plugin-block-devtool": "^1.1.1",
+    "lint-staged": "^10.2.11",
     "cross-env": "^7.0.0",
     "eslint": "^7.2.0",
     "husky": "^4.0.1",
-    "lint-staged": "^10.0.1",
     "mockjs": "^1.1.0",
     "prettier": "^2.0.2",
     "stylelint": "^13.0.0",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "lerna": "^3.22.1",
+    "yorkie": "^2.0.0"
   },
   "checkFiles": [
     "**/*.ts*",

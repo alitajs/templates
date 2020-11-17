@@ -1,26 +1,20 @@
-# pro-blocks
+# alita templates
 
-![](https://badgen.net/badge/icon/Ant%20Design?icon=https://gw.alipayobjects.com/zos/antfincdn/Pp4WPgVDB3/KDpgvguMpGfqaHPjicRK.svg&label) [![Build Status](https://dev.azure.com/chenshuai2144/pro-blocks/_apis/build/status/ant-design.pro-blocks?branchName=master)](https://dev.azure.com/chenshuai2144/pro-blocks/_build/latest?definitionId=3&branchName=master)
+## 贡献
 
-Ant Design Pro for Umi blocks.
+### 新建模版
 
-> [Ant Design Pro V4](https://github.com/ant-design/ant-design-pro/issues/3143) official blockchain
+新建空文件夹，执行初始化，修改简介、分类、二级分类、作者等信息。
 
-## usage
-
-```shell
-umi block add [block github url]
+```
+mkdir EmptyPage
+yarn bootstrap
 ```
 
-You can visit umi [doc](https://umijs.org/guide/block.html) to learn more about umi block.
+### 启动开发
 
-## contribution
-
-Enter the name of the block to be developed
-
-```shell
-npm install
-npm run start 'block_name'
 ```
-
-In complex TypeScript definitions, vscode may crash or tslint report errors. You can restart TypeScript service by "ctrl + shift + p> reload window"
+yarn start templateName
+如,此处不区分大小写
+yarn start EmptyPage
+```
