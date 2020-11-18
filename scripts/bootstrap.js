@@ -30,7 +30,6 @@ const changePkgName = (name) => {
     if (pkgJSONExists) {
       return;
     }
-    console.log(shortName)
     if (args.force || !pkgJSONExists) {
       const json = {
         name,
@@ -39,6 +38,15 @@ const changePkgName = (name) => {
         tplType: '模版的分类，请修改',
         tplSubType: '模版的二级分类，请修改',
         main: "src/index.js",
+        template: {
+          navbar: {
+            title: name,
+            backgroundColor: "#FFFFFF",
+            display: "flex",
+            color: "#333333"
+          },
+          backgroundColor: "#F5F5F5"
+        },
         scripts: {
           dev: "alita dev"
         },
