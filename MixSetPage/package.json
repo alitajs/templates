@@ -1,7 +1,7 @@
 {
   "name": "@alitajs-templates/mixset",
   "version": "0.0.1",
-  "description": "常规简单设置页面",
+  "description": "混合列表设置页面",
   "tplType": "通用",
   "tplSubType": "设置",
   "main": "src/index.js",
