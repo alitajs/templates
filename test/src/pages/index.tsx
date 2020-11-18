@@ -1,10 +1,9 @@
 import React, { FC, useState, useEffect } from 'react';
-import { Button } from 'antd-mobile';
 import styles from './index.less';
 
 interface PageProps {}
 
-const AbcPage: FC<PageProps> = () => {
+const test: FC<PageProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);
   useEffect(() => {
     setTimeout(() => {
@@ -13,11 +12,9 @@ const AbcPage: FC<PageProps> = () => {
   }, []);
   return (
     <div className={styles.center}>
-      <Button className={styles.demo} loading={loading}>
-        hello world
-      </Button>
+      <div className={styles.demo}>hello world,{loading ? 'isLoading' : ''}</div>
     </div>
   );
 };
 
-export default AbcPage;
+export default test;

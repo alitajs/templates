@@ -1,0 +1,26 @@
+{
+  "name": "@alitajs-templates/mixset",
+  "version": "0.0.1",
+  "description": "混合列表设置页面",
+  "tplType": "通用",
+  "tplSubType": "设置",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/MixSetPage#readme",
+  "private": true
+}
