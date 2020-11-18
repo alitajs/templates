@@ -1,8 +1,9 @@
-import React, { FC, useState, useEffect } from 'react';
-import styles from './index.less';
+import React, { FC, useState } from 'react';
 import { List, Switch } from 'antd-mobile';
-const Item = List.Item;
-interface PageProps {}
+import styles from './index.less';
+
+const { Item } = List;
+interface PageProps { }
 
 const MixSetPage: FC<PageProps> = () => {
   const [checked, setChecked] = useState(true);

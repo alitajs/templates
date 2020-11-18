@@ -1,8 +1,10 @@
-import React, { FC, useState, useEffect } from 'react';
-import styles from './index.less';
+import React, { FC } from 'react';
 import { List, WingBlank, Button } from 'antd-mobile';
-interface PageProps {}
-const Item = List.Item;
+import styles from './index.less';
+
+interface PageProps { }
+
+const { Item } = List;
 const SetPage: FC<PageProps> = () => {
   return (
     <div>
@@ -32,7 +34,7 @@ const SetPage: FC<PageProps> = () => {
             通用
           </Item>
         </List>
-        <List style={{ marginTop: '12px' }}>
+        <List style={{ marginTop: '0.12rem' }}>
           <Item extra="详细信息" arrow="horizontal" key="0">
             求助反馈
           </Item>
@@ -41,7 +43,7 @@ const SetPage: FC<PageProps> = () => {
           </Item>
         </List>
         <WingBlank size="md">
-          <Button style={{ marginTop: '20px' }}>退出登录</Button>
+          <Button style={{ marginTop: '0.20rem' }}>退出登录</Button>
         </WingBlank>
       </div>
     </div>
