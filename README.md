@@ -22,6 +22,7 @@ yarn start EmptyPage
 ### 魔改的配置
 
 在 package 里面，增加了 `template` 配置，主要是用来设置 `navbar` 和 页面背景色
+
 > 请注意，是在模版目录下的 `package.json` 里面配置，不是在最外层的 `package.json`。
 
 ```json

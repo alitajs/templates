@@ -3,7 +3,7 @@ import { List, Switch } from 'antd-mobile';
 import styles from './index.less';
 
 const { Item } = List;
-interface PageProps { }
+interface PageProps {}
 
 const MixSetPage: FC<PageProps> = () => {
   const [checked, setChecked] = useState(true);
@@ -88,14 +88,14 @@ const MixSetPage: FC<PageProps> = () => {
           thumb="https://zos.alipayobjects.com/rmsportal/dNuvNrtqUztHCwM.png"
         >
           账号管理
-          </Item>
+        </Item>
         <Item
           arrow="horizontal"
           key="1"
           thumb="https://zos.alipayobjects.com/rmsportal/dNuvNrtqUztHCwM.png"
         >
           安全中心
-          </Item>
+        </Item>
         <Item
           extra="153******38"
           arrow="horizontal"
@@ -103,13 +103,11 @@ const MixSetPage: FC<PageProps> = () => {
           thumb="https://zos.alipayobjects.com/rmsportal/dNuvNrtqUztHCwM.png"
         >
           手机号
-          </Item>
+        </Item>
       </List>
       <List
         renderHeader={() => '小标题描述'}
-        renderFooter={() =>
-          '关闭后,其他用户再转账,收款,添加朋友时将不能通过手机号/会员名搜索到你'
-        }
+        renderFooter={() => '关闭后,其他用户再转账,收款,添加朋友时将不能通过手机号/会员名搜索到你'}
       >
         {listTopData.map((value) => (
           <Item
@@ -135,12 +133,10 @@ const MixSetPage: FC<PageProps> = () => {
           arrow="horizontal"
         >
           标题文字
-          </Item>
+        </Item>
       </List>
       <List
-        renderFooter={() =>
-          '关闭后,其他用户再转账,收款,添加朋友时将不能通过手机号/会员名搜索到你'
-        }
+        renderFooter={() => '关闭后,其他用户再转账,收款,添加朋友时将不能通过手机号/会员名搜索到你'}
       >
         {listMiddleData.map((value) => (
           <Item

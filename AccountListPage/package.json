@@ -1,0 +1,35 @@
+{
+  "name": "@alitajs-templates/accountlist",
+  "version": "0.0.1",
+  "description": "列表型我的页面",
+  "tplType": "通用",
+  "tplSubType": "我的",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "列表",
+      "backgroundColor": "#FFFFFF",
+      "display": "flex",
+      "color": "#333333"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/AccountListPage#readme",
+  "private": true
+}
