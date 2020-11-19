@@ -1,10 +1,10 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC } from 'react';
 import { List, Icon } from 'antd-mobile';
 import styles from './index.less';
 
 const { Item } = List;
-const Brief = Item.Brief;
-interface PageProps {}
+const { Brief } = Item;
+interface PageProps { }
 
 const AccountListPage: FC<PageProps> = () => {
   const listData = [
@@ -41,13 +41,13 @@ const AccountListPage: FC<PageProps> = () => {
   ];
   return (
     <div className={styles.container}>
-      <List className="listTop">
-        <Item arrow="horizontal" thumb={<Icon type="check-circle-o"></Icon>}>
-          <div className="listContent">用户名称</div>
+      <List className={styles.listTop}>
+        <Item arrow="horizontal" multipleLine thumb={<Icon type="check-circle-o" />}>
+          用户名称
           <Brief>用户描述描述描述</Brief>
         </Item>
       </List>
-      <List className="listBottom">
+      <List className={styles.listBottom}>
         {listData.map((value) => (
           <Item key={value.id} arrow="horizontal" thumb={value.thumb} extra={value.extra}>
             单行列表
