@@ -1,0 +1,15 @@
+{
+  "name": "templates",
+  "scope": "alitajs",
+  "version": 2,
+  "builds": [
+    {
+      "src": "build.sh",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "alias": ["templates.alitajs.com"]
+}
