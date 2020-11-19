@@ -1,9 +1,9 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC } from 'react';
 import { List, Icon, Grid } from 'antd-mobile';
 import styles from './index.less';
 
 const { Item } = List;
-const Brief = Item.Brief;
+const { Brief } = Item;
 
 interface PageProps {}
 
@@ -32,24 +32,42 @@ const AccountGridPage: FC<PageProps> = () => {
   ];
   return (
     <div className={styles.container}>
-      <List className="header">
-        <Item arrow="horizontal" thumb={<Icon type="check-circle-o" color="#FFFFFFFF"></Icon>}>
-          <div className="headerContent">用户名称</div> <Brief>用户描述描述描述</Brief>
+      <List className={styles.header}>
+        <Item arrow="horizontal" thumb={<Icon type="check-circle-o" color="#FFFFFFFF" />}>
+          用户名称<Brief>用户描述描述描述</Brief>
         </Item>
       </List>
-      <List className="fontStyle">
+      <List className={styles.fontStyle}>
         <Item>
-          <Grid data={data} hasLine={false} square={false} className="imgStyle" columnNum={5} />
+          <Grid
+            data={data}
+            hasLine={false}
+            square={false}
+            className={styles.imgStyle}
+            columnNum={5}
+          />
         </Item>
       </List>
-      <List className="fontStyle" style={{ marginTop: '.24rem' }} renderHeader="最新优惠">
+      <List className={styles.fontStyle} style={{ marginTop: '.24rem' }} renderHeader="最新优惠">
         <Item>
-          <Grid data={data} hasLine={false} square={false} className="imgStyle" columnNum={5} />
+          <Grid
+            data={data}
+            hasLine={false}
+            square={false}
+            className={styles.imgStyle}
+            columnNum={5}
+          />
         </Item>
       </List>
-      <List className="fontStyle" renderHeader="更多推荐">
+      <List className={styles.fontStyle} renderHeader="更多推荐">
         <Item>
-          <Grid data={data} hasLine={false} square={false} className="imgStyle" columnNum={5} />
+          <Grid
+            data={data}
+            hasLine={false}
+            square={false}
+            className={styles.imgStyle}
+            columnNum={5}
+          />
         </Item>
       </List>
     </div>

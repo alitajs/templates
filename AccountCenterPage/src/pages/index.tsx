@@ -1,10 +1,10 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC } from 'react';
 import { List, Icon } from 'antd-mobile';
 
 import styles from './index.less';
 
 const { Item } = List;
-const Brief = Item.Brief;
+const { Brief } = Item;
 
 interface PageProps {}
 
@@ -43,7 +43,7 @@ const AccountCenterPage: FC<PageProps> = () => {
   ];
   return (
     <div className={styles.container}>
-      <List className="header">
+      <List className={styles.header}>
         <Item
           wrap={true}
           thumb={
@@ -53,11 +53,11 @@ const AccountCenterPage: FC<PageProps> = () => {
             ></Icon>
           }
         >
-          <div className="headerContent">用户名称</div>
+          <div className={styles.headerContent}>用户名称</div>
           <Brief>用户描述描述描述</Brief>
         </Item>
       </List>
-      <List className="content" style={{ marginTop: '.24rem' }}>
+      <List className={styles.content} style={{ marginTop: '.24rem' }}>
         {listData.map((value) => (
           <Item
             key={value.id}
