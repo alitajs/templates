@@ -20,7 +20,7 @@ const RegisterPage: FC<PageProps> = () => {
           extra={<img src={Eyes}></img>}
         ></InputItem>
       </List>
-      <WingBlank size="md">
+      <WingBlank size="md" className={styles.btnStyle}>
         <Button type="primary" style={{ marginTop: '.4rem' }}>
           同意协议并提交
         </Button>

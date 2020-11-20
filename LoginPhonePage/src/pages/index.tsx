@@ -16,8 +16,8 @@ const LoginPhonePage: FC<PageProps> = () => {
           验证码
         </InputItem>
       </List>
-      <WingBlank size="md">
-        <Button type="primary" style={{ marginTop: '.4rem' }}>
+      <WingBlank size="md" className={styles.btnStyle}>
+        <Button  style={{ marginTop: '.4rem' }}>
           登录
         </Button>
       </WingBlank>
