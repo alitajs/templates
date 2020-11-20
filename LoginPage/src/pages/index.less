@@ -1,0 +1,50 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    background: #ffffff;
+    .header {
+      width: 100%;
+      height: 3.46rem !important;
+      font-size: 36px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+      line-height: 75px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img{
+          width: 1.2rem;
+          height: 1.2rem;
+      }
+    }
+    .content {
+      :global {
+        .am-list-item {
+          height: 0.96rem !important;
+          .am-input-extra {
+            color: #1677ff;
+            font-size: 0.34rem;
+            font-weight: 400;
+            padding-left: 0.24rem !important;
+          }
+        }
+      }
+    }
+    .contentBottom {
+      display: block;
+      margin-top: 0.4rem;
+      text-align: center;
+      font-size: 0.3rem;
+      color: #333333;
+    }
+    .btnStyle {
+      :global {
+        .am-button {
+          background: #1677ff;
+          color: #ffffff;
+        }
+      }
+    }
+  }
