@@ -5,6 +5,15 @@
   "tplType": "通用",
   "tplSubType": "我的",
   "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "我的宫格型",
+      "backgroundColor": "linear-gradient(135deg, #168BFF 0%, #1664FF 100%)",
+      "display": "flex",
+      "color": "#FFFFFF"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
   "scripts": {
     "dev": "alita dev"
   },

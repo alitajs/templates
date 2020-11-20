@@ -1,13 +1,13 @@
 {
-  "name": "@alitajs-templates/accountlist",
+  "name": "@alitajs-templates/src",
   "version": "0.0.1",
-  "description": "列表型我的页面",
-  "tplType": "通用",
-  "tplSubType": "我的",
+  "description": "@alitajs-templates/src",
+  "tplType": "模版的分类，请修改",
+  "tplSubType": "模版的二级分类，请修改",
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "我的列表型",
+      "title": "@alitajs-templates/src",
       "backgroundColor": "#FFFFFF",
       "display": "flex",
       "color": "#333333"
@@ -30,6 +30,6 @@
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
-  "homepage": "https://github.com/alitajs/templates/tree/master/AccountListPage#readme",
+  "homepage": "https://github.com/alitajs/templates/tree/master/src#readme",
   "private": true
 }
