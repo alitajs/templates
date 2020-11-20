@@ -1,13 +1,13 @@
 {
-  "name": "@alitajs-templates/src",
+  "name": "@alitajs-templates/searchtabs",
   "version": "0.0.1",
-  "description": "@alitajs-templates/src",
-  "tplType": "模版的分类，请修改",
-  "tplSubType": "模版的二级分类，请修改",
+  "description": "搜索结果页面选择卡类型-版本1",
+  "tplType": "通用",
+  "tplSubType": "搜索结果",
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "@alitajs-templates/src",
+      "title": "搜索",
       "backgroundColor": "#FFFFFF",
       "display": "flex",
       "color": "#333333"
@@ -30,6 +30,6 @@
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
-  "homepage": "https://github.com/alitajs/templates/tree/master/src#readme",
+  "homepage": "https://github.com/alitajs/templates/tree/master/SearchTabsPage#readme",
   "private": true
 }
