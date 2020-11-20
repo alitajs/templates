@@ -7,7 +7,7 @@
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "@alitajs-templates/test",
+      "title": "测试空页面",
       "backgroundColor": "#FFFFFF",
       "display": "flex",
       "color": "#333333"
