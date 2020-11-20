@@ -1,0 +1,35 @@
+.container {
+  height: 100vh;
+  background: #ffffff;
+  .content {
+    :global {
+      .am-list-item {
+        height: 0.96rem !important;
+        &:nth-child(1) {
+          margin-top: 0.8rem;
+
+          border-top: 1px solid #eeeeee;
+        }
+        &:nth-child(2) {
+          border-right: 2px solid #eeeeee;
+        }
+        .am-input-extra {
+          color: #1677ff;
+          font-size: 0.34rem;
+          font-weight: 400;
+          padding-left: 0.24rem !important;
+        }
+      }
+    }
+  }
+  .info {
+    font-size: 22px;
+    color: #999999;
+    margin-top: 0.14rem;
+    font-weight: 400;
+    font-family: PingFangSC-Regular, PingFang SC;
+    span {
+      color: #1677ff;
+    }
+  }
+}
