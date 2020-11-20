@@ -2,8 +2,8 @@
   "name": "@alitajs-templates/test",
   "version": "0.0.1",
   "description": "@alitajs-templates/test",
-  "tplType": "模版的分类，请修改",
-  "tplSubType": "模版的二级分类，请修改",
+  "tplType": "测试",
+  "tplSubType": "页面",
   "main": "src/index.js",
   "template": {
     "navbar": {
