@@ -6,7 +6,7 @@
   "tplSubType": "设置",
   "main": "src/index.js",
   "template": {
-    "navbar":{
+    "navbar": {
       "title": "设置",
       "backgroundColor": "#FFFFFF",
       "display": "flex",

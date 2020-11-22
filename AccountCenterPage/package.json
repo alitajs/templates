@@ -1,16 +1,16 @@
 {
-  "name": "@alitajs-templates/accountgrid",
+  "name": "@alitajs-templates/accountcenter",
   "version": "0.0.1",
-  "description": "宫格型我的页面",
+  "description": "列表型头像居中",
   "tplType": "通用",
   "tplSubType": "我的",
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "我的宫格型",
-      "backgroundColor": "linear-gradient(135deg, #168BFF 0%, #1664FF 100%)",
+      "title": "我的列表型",
+      "backgroundColor": "#FFFFFF",
       "display": "flex",
-      "color": "#FFF"
+      "color": "#333333"
     },
     "backgroundColor": "#F5F5F5"
   },
@@ -30,6 +30,6 @@
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
-  "homepage": "https://github.com/alitajs/templates/tree/master/AccountGridPage#readme",
+  "homepage": "https://github.com/alitajs/templates/tree/master/AccountCenterPage#readme",
   "private": true
 }
