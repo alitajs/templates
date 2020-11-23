@@ -5,11 +5,10 @@ import styles from './index.less';
 const { Item } = List;
 const { Brief } = Item;
 
-interface PageProps {}
+interface PageProps { }
 
 const AccountMixPage: FC<PageProps> = () => {
-  let carouselId = ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'];
-  let imgHeight = '200';
+  const carouselId = ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'];
   const textData = [
     {
       text: '标题文字',
@@ -94,12 +93,13 @@ const AccountMixPage: FC<PageProps> = () => {
         <Grid className={styles.gridStyleBottom} data={textData} hasLine={false} square={false} />
       </div>
       <List renderHeader="最新优惠" className={styles.listStyleTop}>
-        <Grid data={data} square={false} columnNum={5} hasLine={false}></Grid>
+        <Grid data={data} square={false} columnNum={5} hasLine={false} />
         <Item>
-          <Carousel style={{ touchAction: 'none' }} autoplay={true} infinite>
+          <Carousel style={{ touchAction: 'none' }} autoplay infinite>
             {carouselId.map((val) => (
-              <a key={val} style={{ display: 'inline-block', width: '100%', height: imgHeight }}>
+              <a key={val} style={{ display: 'inline-block', width: '100%', height: '2rem' }}>
                 <img
+                  alt="广告图片"
                   src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
                   style={{
                     width: '100%',
@@ -109,7 +109,6 @@ const AccountMixPage: FC<PageProps> = () => {
                   }}
                   onLoad={() => {
                     window.dispatchEvent(new Event('resize'));
-                    imgHeight = 'auto';
                   }}
                 />
               </a>
