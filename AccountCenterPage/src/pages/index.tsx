@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { List, Icon } from 'antd-mobile';
-
 import styles from './index.less';
 
 const { Item } = List;
@@ -45,12 +44,12 @@ const AccountCenterPage: FC<PageProps> = () => {
     <div className={styles.container}>
       <List className={styles.header}>
         <Item
-          wrap={true}
+          wrap
           thumb={
             <Icon
               type="check-circle-o"
               style={{ width: '1.2rem', height: '1.2rem', marginTop: '.24rem' }}
-            ></Icon>
+            />
           }
         >
           <div className={styles.headerContent}>用户名称</div>

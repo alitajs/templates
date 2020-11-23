@@ -7,7 +7,7 @@
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "我的列表型",
+      "title": "",
       "backgroundColor": "#FFFFFF",
       "display": "flex",
       "color": "#333333"
