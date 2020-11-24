@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
+import { List, SearchBar, Flex } from 'antd-mobile';
 import styles from './index.less';
-import { List, SearchBar } from 'antd-mobile';
 
 interface PageProps {}
 
@@ -26,7 +26,7 @@ const SearchLabelPage: FC<PageProps> = () => {
   const tagBottomData = [
     {
       id: 1,
-      text: '体育场馆预订',
+      text: '体育场馆预…',
     },
     {
       id: 2,
@@ -51,22 +51,22 @@ const SearchLabelPage: FC<PageProps> = () => {
         <SearchBar placeholder="搜素你需要的商品热门关键词" />
       </div>
       <List renderHeader="搜索历史" className={styles.gridStyle}>
-        <div className={styles.tagStyle}>
+        <Flex wrap="wrap" justify="start">
           {tagTopData.map((val) => (
-            <div key={val.id} className={styles.flexItem}>
+            <div className={styles.flexItemStyle} key={val.id}>
               {val.text}
             </div>
           ))}
-        </div>
+        </Flex>
       </List>
       <List renderHeader="搜索发现" className={styles.gridStyle}>
-        <div className={styles.tagStyle}>
+        <Flex wrap="wrap" justify="start">
           {tagBottomData.map((val) => (
-            <div key={val.id} className={styles.flexItem}>
+            <div className={styles.flexItemStyle} key={val.id}>
               {val.text}
             </div>
           ))}
-        </div>
+        </Flex>
       </List>
     </div>
   );
