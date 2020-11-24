@@ -1,0 +1,35 @@
+{
+  "name": "@alitajs-templates/resultsstep",
+  "version": "0.0.1",
+  "description": "带步骤的支付类结果页-版本1",
+  "tplType": "通用",
+  "tplSubType": "结果页",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "",
+      "backgroundColor": "#FFFFFF",
+      "display": "flex",
+      "color": "#333333"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/ResultsStepPage#readme",
+  "private": true
+}

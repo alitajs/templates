@@ -1,0 +1,58 @@
+.container {
+  .content {
+    :global {
+      .am-list-item {
+        height: 0.96rem !important;
+        &:nth-child(1) {
+          margin-top: 0.8rem;
+          border-top: 1px solid #eeeeee;
+        }
+        &:nth-child(2) {
+          border-right: 2px solid #eeeeee;
+        }
+        .am-list-line{
+            padding-right:24px !important;
+        }
+        .am-input-extra {
+          color: #1677ff;
+          font-size: 0.34rem;
+          font-weight: 400;
+          .ant-btn{
+            width: auto;
+            height: 48px !important;
+            font-size: 34px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #1677FF;
+            line-height: 24px;
+            padding: 0 !important;
+            padding-left:20px !important;
+            text-align: end;
+            
+          }
+        }
+        &:nth-child(2) .am-input-control{
+            border-right: 2px solid  #EEEEEE;
+        }
+      }
+    }
+  }
+  .info {
+    font-size: 22px;
+    color: #999999;
+    margin-top: 0.14rem;
+    font-weight: 400;
+    font-family: PingFangSC-Regular, PingFang SC;
+    span {
+      color: #1677ff;
+    }
+  }
+  .btnStyle {
+    :global {
+      .am-button {
+        background: #1677ff;
+        color: #ffffff;
+      }
+    }
+  }
+}
