@@ -1,17 +1,17 @@
 import React, { FC } from 'react';
-import styles from './index.less';
 import { List, SearchBar, Tabs } from 'antd-mobile';
+import styles from './index.less';
 
 const { Item } = List;
 
-interface PageProps {}
+interface PageProps { }
 
 const SearchTabsPage: FC<PageProps> = () => {
   const tabs = [
-    { title: '每日推荐' },
-    { title: '热门搜索' },
-    { title: '新上好课' },
-    { title: '新手入门' },
+    { title: '每日推荐', key: '1' },
+    { title: '热门搜索', key: '2' },
+    { title: '新上好课', key: '3' },
+    { title: '新手入门', key: '4' },
   ];
   const listData = [
     {
@@ -52,10 +52,10 @@ const SearchTabsPage: FC<PageProps> = () => {
       </div>
       <div className={styles.tabsContent}>
         <Tabs tabs={tabs} tabBarActiveTextColor="#1677FF">
-          <ListTabsItem />
-          <ListTabsItem />
-          <ListTabsItem />
-          <ListTabsItem />
+          <ListTabsItem key="1" />
+          <ListTabsItem key="2" />
+          <ListTabsItem key="3" />
+          <ListTabsItem key="4" />
         </Tabs>
       </div>
     </div>
