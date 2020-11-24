@@ -1,24 +1,56 @@
-import React, { FC } from 'react';
-import styles from './index.less';
+import React, { FC, useState } from 'react';
 import { List, InputItem, Button, WingBlank } from 'antd-mobile';
-import Eyes from '../assets/eyes.png';
+import { SendCode } from '@alitajs/antd-plus';
+import styles from './index.less';
+import PasswordHiddenImg from '../assets/close.png';
+import PasswordOpenImg from '../assets/open.png';
 
 interface PageProps {}
 
 const RegisterPage: FC<PageProps> = () => {
+  const [start, setStart] = useState(false);
+  const [passwordStatus, setPasswordStatus] = useState(false);
+  const handleClick = () => {
+    setStart(true);
+  };
   return (
     <div className={styles.container}>
       <List className={styles.content}>
         <InputItem clear placeholder="请输入手机号">
           手机号
         </InputItem>
-        <InputItem clear extra={<span>发送验证码</span>} placeholder="请输入验证码">
+        <InputItem
+          clear
+          extra={
+            <SendCode
+              type="link"
+              start={start}
+              onClick={handleClick}
+              second={5}
+              storageKey="plus-send-code"
+              initText="发送验证码"
+              runText="{%s}秒后重新获取"
+              resetText="重新获取验证码"
+              onEnd={() => {
+                setStart(false);
+              }}
+            />
+          }
+          placeholder="请输入验证码"
+        >
           验证码
         </InputItem>
         <InputItem
           clear
           placeholder="请输入新密码(最少6位)"
-          extra={<img src={Eyes}></img>}
+          type={passwordStatus ? 'password' : 'text'}
+          extra={
+            <img
+              src={passwordStatus ? PasswordHiddenImg : PasswordOpenImg}
+              alt=""
+              onClick={() => setPasswordStatus(!passwordStatus)}
+            ></img>
+          }
         ></InputItem>
       </List>
       <WingBlank size="md" className={styles.btnStyle}>
