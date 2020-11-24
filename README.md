@@ -36,3 +36,19 @@ yarn start EmptyPage
     "backgroundColor": "#F5F5F5"
   },
 ```
+
+### 资源
+
+所有的灰色图片都使用这个链接 https://cdn.nlark.com/yuque/0/2020/png/123174/1606203971629-a847138d-dd5d-4e41-81ac-d85565a76f3f.png
+所有的头像都使用这个链接 https://cdn.nlark.com/yuque/0/2020/png/123174/1606204045130-a7defa4f-356a-4cfc-a47f-2b14b733b987.png
+站着的蚂蚁人 https://cdn.nlark.com/yuque/0/2020/png/123174/1606204069039-659a5ccf-a783-498d-9a66-940ccafc59d3.png
+
+不要直接写在 Dom 中，请在页面最上方定义变量。
+```ts
+
+const BgImg = "https://cdn.nlark.com/yuque/0/2020/png/123174/1606203971629-a847138d-dd5d-4e41-81ac-d85565a76f3f.png";
+const AvatarImg = "https://cdn.nlark.com/yuque/0/2020/png/123174/1606204045130-a7defa4f-356a-4cfc-a47f-2b14b733b987.png";
+const AntImg = "https://cdn.nlark.com/yuque/0/2020/png/123174/1606204069039-659a5ccf-a783-498d-9a66-940ccafc59d3.png";
+
+return (<><img src={BgImg} /></>)
+```
