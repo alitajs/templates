@@ -1,9 +1,15 @@
 .container {
   height: 100vh;
   background: linear-gradient(135deg, #168bff 0%, #1664ff 100%);
-
+  padding-top: 96px;
   .header {
     :global {
+      .am-notice-bar {
+        position: absolute;
+        width: 100%;
+        top: 90px;
+      }
+
       .am-icon {
         width: 44px;
         height: 44px;
@@ -19,7 +25,7 @@
   .collection {
     background: #ffffff;
     height: 762px;
-    margin: 24px;
+    margin: 0 24px 24px 24px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -40,7 +46,7 @@
       }
     }
 
-    > span {
+    >span {
       text-align: center;
       display: block;
       font-size: 30px;
