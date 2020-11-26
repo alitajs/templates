@@ -1,18 +1,21 @@
 .container {
-    height: 100vh;
+  height: 100vh;
   background: linear-gradient(135deg, #168bff 0%, #1664ff 100%);
+
   .header {
     :global {
       .am-icon {
         width: 0.44rem;
         height: 0.44rem;
       }
+
       .am-notice-bar-marquee {
         font-size: 30px;
         line-height: 42px;
       }
     }
   }
+
   .collection {
     background: #ffffff;
     height: 7.62rem;
@@ -22,6 +25,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
     :global {
       .ant-btn {
         height: 44px;
@@ -30,12 +34,13 @@
         color: #1677ff;
         padding: 1px 64px;
       }
+
       .ant-btn:nth-child(1) {
         border-right: 3px solid #eeeeee;
       }
     }
 
-    > span {
+    >span {
       text-align: center;
       display: block;
       font-size: 30px;
