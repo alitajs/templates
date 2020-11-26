@@ -1,0 +1,214 @@
+.container {
+  .header {
+    width: 100%;
+    height: 84px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #1677ff;
+    display: flex;
+    justify-content: flex-end;
+
+    :global {
+      .am-button {
+        border: none;
+
+        span {
+          padding-right: 24px;
+          font-size: 30px;
+          font-weight: 400;
+          color: #1677ff;
+        }
+      }
+    }
+  }
+
+  .steps {
+    :global {
+      .am-steps-item {
+        margin-left: 60px !important;
+
+        &:nth-child(1) .am-steps-item-title {
+          color: #1677ff;
+        }
+
+        .am-steps-item-content {
+          margin-left: 69px !important;
+        }
+
+        .am-steps-item-tail::after {
+          height: 195%;
+          top: -16px;
+        }
+
+        .am-steps-item-title {
+          width: 570px !important;
+          color: #333333;
+          font-size: 34px !important;
+          font-weight: 400;
+        }
+
+        .am-steps-item-description {
+          width: 550px !important;
+          font-size: 30px !important;
+          color: #999 !important;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .dot {
+      width: 16px;
+      height: 16px;
+      position: relative;
+      top: 5px;
+      left: 2px;
+    }
+  }
+
+  .infoList {
+    :global {
+      .am-list-body {
+        border: none !important;
+        border-bottom: none !important;
+        margin-top: 16px;
+
+        .am-list-item {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+          height: 66px !important;
+
+          .am-list-line {
+            display: flex;
+            flex-direction: row-reverse;
+
+            .am-list-content {
+              font-size: 30px;
+              font-weight: 400;
+              color: #333333;
+              display: flex;
+              justify-content: flex-end;
+
+              padding: 0 !important;
+            }
+
+            .am-list-extra {
+              font-size: 30px;
+              font-weight: 400;
+              color: #999999;
+              padding: 0 !important;
+              display: flex;
+              justify-content: flex-start;
+            }
+          }
+
+          &:nth-child(1) {
+            .am-list-line {
+              border-bottom: none;
+              padding-right: 0;
+            }
+          }
+
+          &:nth-child(2) {
+            .am-list-line {
+              border-bottom: none;
+              padding-right: 0;
+            }
+          }
+
+          &:nth-child(3) {
+            .am-list-line {
+              border-bottom: 1px solid #eeeeee;
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .flexItemStyle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 214px;
+    background: #f9f9f9 !important;
+    border-radius: 4px;
+    border: 1px solid #f3f3f3;
+
+    :global {
+      .am-button {
+        width: 96px;
+        height: 50px;
+        background: #1677ff;
+        border-radius: 24px;
+        line-height: 34px !important;
+        margin-top: 8px;
+
+        span {
+          font-size: 24px;
+          font-weight: 400;
+          color: #ffffff;
+        }
+      }
+    }
+
+    &>span:nth-child(1) {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 400;
+      color: #333333;
+    }
+
+    div {
+      text-align: center;
+      margin-top: 8px;
+
+      span:nth-child(1) {
+        display: inline-block;
+        font-size: 50px;
+        font-family: Helvetica;
+        color: #333333;
+        margin-right: 4px;
+      }
+
+      span:nth-child(2) {
+        font-size: 26px;
+        font-weight: 400;
+        color: #333333;
+      }
+    }
+
+    span:nth-child(3) {
+      height: 50px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 42px;
+      margin-top: 9px;
+
+      &::after {
+        content: '>';
+        right: 2px;
+      }
+    }
+  }
+
+  .cardsList {
+    :global {
+      .am-list-header {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 400;
+        color: #999999;
+      }
+
+      .am-list-body {
+        border: none;
+        padding-bottom: 24px;
+        margin: 0 24px;
+      }
+    }
+  }
+}
