@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { Button, Result, WhiteSpace, WingBlank } from 'antd-mobile';
 import styles from './index.less';
+
 const WarnImg = 'https://gw.alipayobjects.com/zos/rmsportal/GIyMDJnuqmcqPLpHCSkj.svg';
 
 interface PageProps {}
