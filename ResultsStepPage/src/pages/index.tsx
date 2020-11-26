@@ -6,7 +6,7 @@ import Dot from '../../assets/dot.png';
 const { Item } = List;
 const { Step } = Steps;
 
-interface PageProps {}
+interface PageProps { }
 
 const listData = [
   {
@@ -25,6 +25,7 @@ const listData = [
     extra: '宝贝核销信息',
   },
 ];
+
 const ResultsStepPage: FC<PageProps> = () => {
   return (
     <div className={styles.container}>
@@ -32,7 +33,7 @@ const ResultsStepPage: FC<PageProps> = () => {
         <Button type="ghost">完成</Button>
       </div>
       <div className={styles.steps}>
-        <Steps size="small" current={1}>
+        <Steps size="small" current={0} >
           <Step
             title="支付成功"
             description="辅助说明"
@@ -40,14 +41,15 @@ const ResultsStepPage: FC<PageProps> = () => {
           />
           <Step
             title="缴费单位处理中缴费单位处理中缴费单位处理中"
-            status="wait "
             description="辅助说明辅助说明辅助说明辅助说明辅助说明"
-            icon={<img src={Dot} className={styles.dot}></img>}
+            icon={<img src={Dot} className={styles.dot} alt="dot img" />}
           />
-          <Step title="到账提示" icon={<img src={Dot} className={styles.dot}></img>} />
+          <Step title="到账提示"
+            icon={<img src={Dot} className={styles.dot} alt="dot img" />}
+          />
           <Step
             title="到账提示"
-            icon={<img src={Dot} className={styles.dot}></img>}
+            icon={<img src={Dot} className={styles.dot} alt="dot img" />}
             description="辅助说明"
           />
         </Steps>
