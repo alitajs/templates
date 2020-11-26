@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { List, Button } from 'antd-mobile';
+import { List, Button, Flex } from 'antd-mobile';
 import styles from './index.less';
 import PayCardVIPImg from '../../assets/payCardVIP.png';
 
@@ -13,16 +13,28 @@ const PaymentCodePage: FC<PageProps> = () => {
     <div className={styles.container}>
       <img src={PayCardVIPImg} alt="" className={styles.vipHeader} />
       <div className={styles.collection}>
-        <img src={BgImg} alt="" style={{ height: '1.68rem', margin: '0.26rem' }} />
+        <Flex justify="center">
+          <img
+            src={BgImg}
+            alt=""
+            style={{ width: '6.54rem', height: '1.68rem', margin: '0.26rem auto' }}
+          />
+        </Flex>
         <div className={styles.cardNumber}>
           <span>2807</span>
           <span>******</span>
           <span>查看数字</span>
         </div>
-        <img src={BgImg} alt="" style={{ height: '3.2rem', margin: '0.53rem 1.92rem' }} />
+        <Flex justify="center">
+          <img
+            src={BgImg}
+            alt=""
+            style={{ width: '3.2rem', height: '3.2rem', margin: '0.52rem auto' }}
+          />
+        </Flex>
         <List className={styles.listStyle}>
           <Item thumb={BgImg} arrow="horizontal">
-            招商银行储蓄卡（5419）
+            招商银行储蓄卡(5419)
           </Item>
           <Item
             thumb={BgImg}
