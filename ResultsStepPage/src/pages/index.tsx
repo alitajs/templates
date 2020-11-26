@@ -6,7 +6,7 @@ import Dot from '../../assets/dot.png';
 const { Item } = List;
 const { Step } = Steps;
 
-interface PageProps { }
+interface PageProps {}
 
 const listData = [
   {
@@ -33,7 +33,7 @@ const ResultsStepPage: FC<PageProps> = () => {
         <Button type="ghost">完成</Button>
       </div>
       <div className={styles.steps}>
-        <Steps size="small" current={0} >
+        <Steps size="small" current={0}>
           <Step
             title="支付成功"
             description="辅助说明"
@@ -44,9 +44,7 @@ const ResultsStepPage: FC<PageProps> = () => {
             description="辅助说明辅助说明辅助说明辅助说明辅助说明"
             icon={<img src={Dot} className={styles.dot} alt="dot img" />}
           />
-          <Step title="到账提示"
-            icon={<img src={Dot} className={styles.dot} alt="dot img" />}
-          />
+          <Step title="到账提示" icon={<img src={Dot} className={styles.dot} alt="dot img" />} />
           <Step
             title="到账提示"
             icon={<img src={Dot} className={styles.dot} alt="dot img" />}

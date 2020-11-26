@@ -34,7 +34,8 @@ const AccountGridPage: FC<PageProps> = () => {
     <div className={styles.container}>
       <List className={styles.header}>
         <Item arrow="horizontal" thumb={<Icon type="check-circle-o" color="#FFFFFFFF"></Icon>}>
-          <span>用户名称</span><Brief>用户描述描述描述</Brief>
+          <span>用户名称</span>
+          <Brief>用户描述描述描述</Brief>
         </Item>
       </List>
       <List className={styles.fontStyle}>

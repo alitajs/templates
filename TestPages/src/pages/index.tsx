@@ -1,21 +1,18 @@
 import React, { FC, useState, useEffect } from 'react';
 import styles from './index.less';
 
-interface PageProps {
-}
+interface PageProps {}
 
 const TestPages: FC<PageProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);
   useEffect(() => {
     setTimeout(() => {
-setLoading(false);
+      setLoading(false);
     }, 3000);
   }, []);
   return (
     <div className={styles.center}>
-      <div className={styles.demo}>
-        hello world,{loading ? 'isLoading' : ''}
-      </div>
+      <div className={styles.demo}>hello world,{loading ? 'isLoading' : ''}</div>
     </div>
   );
 };

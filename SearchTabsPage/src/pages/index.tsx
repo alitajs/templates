@@ -4,7 +4,7 @@ import styles from './index.less';
 
 const { Item } = List;
 
-interface PageProps { }
+interface PageProps {}
 
 const SearchTabsPage: FC<PageProps> = () => {
   const tabs = [
