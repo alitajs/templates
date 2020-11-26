@@ -2,12 +2,11 @@ import React, { FC } from 'react';
 import { List, Flex, Button, Result } from 'antd-mobile';
 import styles from './index.less';
 
-interface PageProps {}
+interface PageProps { }
 
 const { Item } = List;
-const myImg = (src: string | undefined) => (
-  <img src={src} alt="" style={{ width: '.88rem', height: '.88rem' }} />
-);
+const AlipayImg = "https://gw.alipayobjects.com/zos/rmsportal/pdFARIqkrKEGVVEwotFe.svg";
+
 const listData = [
   {
     id: 1,
@@ -28,7 +27,7 @@ const ResultsPage: FC<PageProps> = () => {
       </div>
       <div className={styles.headerResult}>
         <Result
-          img={myImg('https://gw.alipayobjects.com/zos/rmsportal/pdFARIqkrKEGVVEwotFe.svg')}
+          img={<img src={AlipayImg} alt="" style={{ width: '.88rem', height: '.88rem' }} />}
           title="支付成功"
           message={
             <div className={styles.price}>

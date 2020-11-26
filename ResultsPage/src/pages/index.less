@@ -3,60 +3,66 @@
     width: 100%;
     height: 88px;
     font-size: 30px;
-    font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #1677ff;
     display: flex;
     background: #ffffff;
     justify-content: flex-end;
+
     :global {
       .am-button {
         border: none;
+
         span {
           padding-right: 24px;
           font-size: 30px;
-          font-family: PingFangSC-Regular, PingFang SC;
           font-weight: 400;
           color: #1677ff;
         }
       }
     }
   }
+
   .headerResult {
     :global {
       .am-result {
         padding-top: 0 !important;
         border-bottom: none !important;
+
         .am-result-pic {
-          width: 0.88rem !important;
-          height: 0.88rem !important;
+          width: 88px !important;
+          height: 88px !important;
         }
+
         .am-result-title {
-          margin-top: 0.16rem !important;
+          margin-top: 16px !important;
           font-size: 34px;
-          font-family: PingFangSC-Medium, PingFang SC;
           font-weight: 500;
           color: #1677ff;
         }
+
+        .am-result-message {
+          margin-top: 40px !important;
+        }
       }
     }
+
     .price {
       span:nth-child(1) {
         font-size: 60px;
-        font-family: Helvetica;
         color: #333333;
       }
+
       span:nth-child(2) {
         font-size: 58px;
-        font-family: Helvetica;
         color: #333333;
       }
+
       &::before {
         content: '¥';
         width: 24px;
         height: 30px;
         font-size: 40px;
-        font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;
         color: #333333;
         line-height: 30px;
@@ -66,30 +72,33 @@
       }
     }
   }
+
   .infoList {
     :global {
       .am-list-body {
         border: none;
+
         .am-list-item {
-          padding-left: 0.24rem;
+          padding-left: 24px;
+
           .am-list-line {
             border-bottom: none;
-            padding-right: 0rem;
-            margin-right: 0.24rem;
+            padding-right: 0;
+            margin-right: 24px;
             display: flex;
             flex-direction: row-reverse;
+
             .am-list-content {
               font-size: 30px;
-              font-family: PingFangSC-Regular, PingFang SC;
               font-weight: 400;
               color: #333333;
               display: flex;
               justify-content: flex-end;
               padding: 0 !important;
             }
+
             .am-list-extra {
               font-size: 30px;
-              font-family: PingFangSC-Regular, PingFang SC;
               font-weight: 400;
               color: #999999;
               padding: 0 !important;
@@ -97,6 +106,7 @@
               justify-content: flex-start;
             }
           }
+
           &:last-child .am-list-line {
             border-bottom: 1px solid #eeeeee;
           }
@@ -104,18 +114,21 @@
       }
     }
   }
+
   .cardsList {
     background-color: #fff;
+
     .flexItemStyle {
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 2.14rem;
+      height: 214px;
       background: #f9f9f9 !important;
       border-radius: 4px;
       border: 1px solid #f3f3f3;
+
       :global {
         .am-button {
           width: 96px;
@@ -124,60 +137,63 @@
           border-radius: 24px;
           line-height: 34px !important;
           margin-top: 8px;
+
           span {
             font-size: 24px;
-            font-family: PingFangSC-Regular, PingFang SC;
             font-weight: 400;
             color: #ffffff;
           }
         }
       }
-      & > span:nth-child(1) {
+
+      &>span:nth-child(1) {
         text-align: center;
         font-size: 26px;
-        font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #333333;
       }
+
       div {
         text-align: center;
         margin-top: 8px;
+
         span:nth-child(1) {
           display: inline-block;
           font-size: 50px;
-          font-family: Helvetica;
           color: #333333;
           margin-right: 4px;
         }
+
         span:nth-child(2) {
           font-size: 26px;
-          font-family: PingFangSC-Regular, PingFang SC;
           font-weight: 400;
           color: #333333;
         }
       }
+
       span:nth-child(3) {
         height: 50px;
         font-size: 26px;
-        font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #999999;
         line-height: 42px;
         margin-top: 9px;
+
         &::after {
           content: '>';
           right: 2px;
         }
       }
     }
+
     :global {
       .am-list-header {
         text-align: center;
         font-size: 26px;
-        font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #999999;
       }
+
       .am-list-body {
         border: none;
         padding-bottom: 24px;

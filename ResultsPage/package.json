@@ -9,7 +9,7 @@
     "navbar": {
       "title": " ",
       "backgroundColor": "#FFFFFF",
-      "display": "flex",
+      "display": "none",
       "color": "#333333"
     },
     "backgroundColor": "#F5F5F5"
