@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  background: #ffffff;
+
+  .header {
+    width: 100%;
+    height: 235px !important;
+    font-size: 54px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    :global {
+      .am-list-item {
+        height: 96px !important;
+
+        &:nth-of-type(2) .am-input-control {
+          border-right: 2px solid #eeeeee;
+        }
+
+        .am-input-extra {
+          color: #1677ff;
+          font-size: 34px;
+          font-weight: 400;
+          padding-left: 14px !important;
+
+          .ant-btn {
+            width: auto;
+            height: 48px !important;
+            font-size: 34px;
+            font-weight: 400;
+            color: #1677ff;
+            line-height: 24px;
+            padding: 0;
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+
+  .contentBottom {
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #333333;
+  }
+
+  .btnStyle {
+    :global {
+      .am-button {
+        background: #1677ff;
+        color: #ffffff;
+      }
+    }
+  }
+}
