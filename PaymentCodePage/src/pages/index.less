@@ -1,0 +1,124 @@
+.container {
+  height: 100vh;
+  background: linear-gradient(135deg, #168bff 0%, #1664ff 100%);
+  display: flex;
+  flex-direction: column;
+
+  .vipHeader {
+    height: 72px;
+    margin: 44px 24px -2px 24px;
+  }
+
+  .collection {
+    background: #ffffff;
+    height: 890px;
+    margin: 0px 24px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .cardNumber {
+      display: flex;
+      justify-content: center;
+
+      >span:not(:nth-child(2)) {
+        margin-right: 6px;
+        font-size: 26px;
+        font-weight: 400;
+        color: #999999;
+      }
+
+      >span:nth-child(2) {
+        margin-right: 6px;
+        font-size: 26px;
+        font-weight: 400;
+        color: #999999;
+        line-height: 38px;
+      }
+    }
+
+    .listStyle {
+      font-size: 34px;
+      font-weight: 400;
+      color: #333333;
+
+      :global {
+        .am-list-body {
+          border: none;
+
+          .am-list-item {
+            height: 96px;
+            padding: 0px;
+            margin: auto 30px;
+
+            &:nth-child(1) {
+              border-top: 1px solid #ddd;
+              border-bottom: 1px solid #ddd;
+            }
+
+            .am-list-thumb {
+              img {
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+              }
+            }
+
+            .am-list-line {
+              padding-right: 0;
+              border-bottom: none;
+            }
+
+            .am-list-extra {
+              flex-basis: auto;
+
+              .am-button {
+                width: 136px;
+                height: 40px;
+                background: #ffffff;
+                border-radius: 4px;
+                border: 1px solid #1677ff;
+                padding: 4px 8px;
+
+                span {
+                  display: block;
+                  width: 120px;
+                  height: 34px;
+                  font-size: 24px;
+                  font-weight: 400;
+                  color: #1677ff;
+                  line-height: 34px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    :global {
+      .ant-btn {
+        height: 44px;
+        font-size: 26px;
+        font-weight: 400;
+        color: #1677ff;
+        padding: 1px 64px;
+      }
+
+      .ant-btn:nth-child(1) {
+        border-right: 3px solid #eeeeee;
+      }
+    }
+
+    >span {
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 45px;
+    }
+  }
+}

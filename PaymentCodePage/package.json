@@ -1,0 +1,35 @@
+{
+  "name": "@alitajs-templates/paymentcode",
+  "version": "0.0.1",
+  "description": "付款码-版本3",
+  "tplType": "通用",
+  "tplSubType": "码页面",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "向商家付钱",
+      "backgroundColor": "#168BFF",
+      "display": "flex",
+      "color": "#FFFFFF"
+    },
+    "backgroundColor": ""
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/PaymentCodePage#readme",
+  "private": true
+}

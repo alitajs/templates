@@ -4,7 +4,7 @@ import styles from './index.less';
 
 const WarnImg = 'https://gw.alipayobjects.com/zos/rmsportal/GIyMDJnuqmcqPLpHCSkj.svg';
 
-interface PageProps {}
+interface PageProps { }
 
 const ResultsIconPage: FC<PageProps> = () => {
   return (

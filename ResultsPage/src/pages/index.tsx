@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { List, Flex, Button, Result } from 'antd-mobile';
 import styles from './index.less';
 
-interface PageProps {}
+interface PageProps { }
 
 const { Item } = List;
 const AlipayImg = 'https://gw.alipayobjects.com/zos/rmsportal/pdFARIqkrKEGVVEwotFe.svg';

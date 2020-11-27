@@ -2,10 +2,9 @@ import React, { FC } from 'react';
 import { Button, Result, WhiteSpace, WingBlank } from 'antd-mobile';
 import styles from './index.less';
 
-const AntImg =
-  'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b8e459166dd84ed3965c5d9c4f4bf4cd~tplv-k3u1fbpfcp-watermark.image';
+const AntImg = 'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b8e459166dd84ed3965c5d9c4f4bf4cd~tplv-k3u1fbpfcp-watermark.image';
 
-interface PageProps {}
+interface PageProps { }
 
 const ResultsImagePage: FC<PageProps> = () => {
   return (
