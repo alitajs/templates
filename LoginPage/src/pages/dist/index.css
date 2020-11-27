@@ -28,7 +28,7 @@
 .container .content :global .am-list-item {
   height: 96px !important;
 }
-.container .content :global .am-list-item .am-input-control {
+.container .content :global .am-list-item:nth-of-type(2) .am-input-control {
   border-right: 2px solid #eeeeee;
 }
 .container .content :global .am-list-item .am-input-extra {
