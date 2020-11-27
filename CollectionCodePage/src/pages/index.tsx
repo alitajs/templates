@@ -3,10 +3,9 @@ import { NoticeBar } from 'antd-mobile';
 import { Button } from 'antd';
 import styles from './index.less';
 
-const BgImg =
-  'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image';
+const BgImg = 'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image';
 
-interface PageProps {}
+interface PageProps { }
 
 const CollectionCodePage: FC<PageProps> = () => {
   return (
