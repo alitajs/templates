@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 90px);
+
+  .searchBar {
+
+    :global {
+      .am-search {
+        background-color: #108ee9;
+        padding: 14px 24px;
+      }
+
+      .am-search-input {
+        padding: 22px 0 24px 0;
+        background: transparent;
+        border-radius: 30px;
+        border: 2px solid #fff;
+        height: 60px;
+      }
+
+      .am-search-cancel {
+        color: #fff;
+      }
+
+      .am-search-synthetic-ph {
+        text-align: left;
+        padding-left: 30px;
+      }
+
+      .am-search-synthetic-ph-placeholder {
+        color: #ccc;
+      }
+
+      .am-search-value {
+        color: #fff;
+      }
+    }
+  }
+
+  .tabStyle {
+    flex: 1;
+    overflow: auto;
+
+    :global {
+      .am-tabs-default-bar-tab {
+        font-size: 34px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 48px;
+      }
+
+      .am-tabs-default-bar-tab-active {
+        font-size: 34px;
+        font-weight: 500;
+        color: #1677FF;
+        line-height: 48px;
+      }
+    }
+
+    .pageContainer {
+      padding: 16px 24px;
+    }
+  }
+}

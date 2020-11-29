@@ -1,0 +1,111 @@
+.mainCardContainer {
+  .titleCardContainer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+
+    .title {
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+      padding-right: 24px;
+    }
+
+    .subTitle {
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+    }
+  }
+
+  .dataContainer {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+
+    .dataItem {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .dataImg {
+        position: relative;
+
+        .itemImg {
+          width: 100%;
+          height: 240px;
+          border-radius: 16px 16px 0px 0px;
+        }
+
+        .tip {
+          position: absolute;
+          left: 4px;
+          bottom: 8px;
+          padding: 0 4px;
+          background: #FF6010;
+          border-radius: 4px;
+          font-size: 22px;
+          font-weight: 400;
+          color: #FFFFFF;
+          line-height: 30px;
+        }
+      }
+
+      .itemInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px 24px;
+        background-color: #fff;
+        border-radius: 0 0 16px 16px;
+        flex: 1;
+        height: 100%;
+
+        .itemTitle {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+
+        .otherInfo {
+          .saleNum {
+            font-size: 26px;
+            font-weight: 400;
+            color: #999999;
+            line-height: 37px;
+            padding: 16px 0 8px 0;
+          }
+
+          .accountAndTip {
+            display: flex;
+            align-items: center;
+            padding-top: 8px;
+
+            .account {
+              font-size: 36px;
+              font-weight: 500;
+              color: #FF3B30;
+              line-height: 50px;
+            }
+
+            .tipList {
+              font-size: 22px;
+              font-weight: 400;
+              color: #FF6010;
+              line-height: 30px;
+              background: #FFECE3;
+              border-radius: 4px;
+              padding: 0 4px;
+              margin-left: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
