@@ -1,0 +1,35 @@
+.cityGridStyle {
+  padding: 0 24px;
+
+  .cityGridTitle {
+    font-size: 26px;
+    font-family: PingFangSC-Regular,
+      PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    line-height: 37px;
+    padding-bottom: 16px;
+  }
+
+  .cityData {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .city {
+      background: #FFFFFF;
+      border-radius: 8px;
+      border: 1px solid #E5E5E5;
+      padding: 19px 16px;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .activeCity {
+      border: 2px solid #1677FF;
+      padding: 17px 16px;
+    }
+  }
+}

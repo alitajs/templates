@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 90px);
+
+  .searchBar {
+    background-color: #fff;
+
+    :global {
+      .am-search-synthetic-ph {
+        padding-left: 30px;
+        text-align: left;
+      }
+
+      .am-search-input {
+        padding: 22px 0 24px 0;
+        background: #FFFFFF;
+        border-radius: 30px;
+        border: 2px solid #1677FF;
+        height: 60px;
+      }
+
+      .am-search-value {
+        height: 60px;
+      }
+
+      .am-search-synthetic-ph-placeholder {
+        font-size: 26px;
+        font-weight: 400;
+        color: #999999;
+        line-height: 37px;
+      }
+
+      .am-search {
+        background-color: #fff;
+      }
+    }
+  }
+
+  .cityContainer {
+    background-color: #F5F5F5;
+    flex: 1;
+    overflow: auto;
+  }
+
+  .cityDataStyle {
+    padding-top: 24px;
+
+    .cityCode {
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+      padding: 19px 0 14px 24px;
+    }
+  }
+
+
+}
