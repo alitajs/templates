@@ -1,13 +1,13 @@
 {
-  "name": "@alitajs-templates/test",
+  "name": "@alitajs-templates/login",
   "version": "0.0.1",
-  "description": "@alitajs-templates/test",
-  "tplType": "测试",
-  "tplSubType": "页面",
+  "description": "简单登录页面",
+  "tplType": "通用",
+  "tplSubType": "登录注册",
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "测试空页面",
+      "title": " ",
       "backgroundColor": "#FFFFFF",
       "display": "flex",
       "color": "#333333"
@@ -30,6 +30,6 @@
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
-  "homepage": "https://github.com/alitajs/templates/tree/master/TestPages#readme",
+  "homepage": "https://github.com/alitajs/templates/tree/master/LoginPage#readme",
   "private": true
 }

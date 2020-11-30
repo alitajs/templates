@@ -1,0 +1,59 @@
+.container {
+  height: 100vh;
+  background: linear-gradient(135deg, #168bff 0%, #1664ff 100%);
+  padding-top: 96px;
+
+  .header {
+    :global {
+      .am-notice-bar {
+        position: absolute;
+        width: 100%;
+        top: 90px;
+      }
+
+      .am-icon {
+        width: 44px;
+        height: 44px;
+      }
+
+      .am-notice-bar-marquee {
+        font-size: 30px;
+        line-height: 42px;
+      }
+    }
+  }
+
+  .collection {
+    background: #ffffff;
+    height: 762px;
+    margin: 0 24px 24px 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    :global {
+      .ant-btn {
+        height: 44px;
+        font-size: 26px;
+        font-weight: 400;
+        color: #1677ff;
+        padding: 1px 64px;
+      }
+
+      .ant-btn:nth-child(1) {
+        border-right: 3px solid #eeeeee;
+      }
+    }
+
+    >span {
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 45px;
+    }
+  }
+}

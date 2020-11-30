@@ -1,0 +1,64 @@
+.container {
+  .content {
+    :global {
+      .am-list-item {
+        height: 96px !important;
+
+        &:nth-child(1) {
+          margin-top: 80px;
+          border-top: 1px solid #eeeeee;
+        }
+
+        &:nth-child(2) {
+          border-right: 2px solid #eeeeee;
+        }
+
+        .am-list-line {
+          padding-right: 24px !important;
+        }
+
+        .am-input-extra {
+          color: #1677ff;
+          font-size: 34px;
+          font-weight: 400;
+
+          .ant-btn {
+            width: auto;
+            height: 48px !important;
+            font-size: 34px;
+            font-weight: 400;
+            color: #1677ff;
+            line-height: 24px;
+            padding: 0 !important;
+            padding-left: 20px !important;
+            text-align: end;
+          }
+        }
+
+        &:nth-child(2) .am-input-control {
+          border-right: 2px solid #eeeeee;
+        }
+      }
+    }
+  }
+
+  .info {
+    font-size: 22px;
+    color: #999999;
+    margin-top: 14px;
+    font-weight: 400;
+
+    span {
+      color: #1677ff;
+    }
+  }
+
+  .btnStyle {
+    :global {
+      .am-button {
+        background: #1677ff;
+        color: #ffffff;
+      }
+    }
+  }
+}

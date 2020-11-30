@@ -4,7 +4,7 @@ import styles from './index.less';
 
 const { Item } = List;
 const { Brief } = Item;
-interface PageProps { }
+interface PageProps {}
 
 const AccountListPage: FC<PageProps> = () => {
   const listData = [

@@ -15,9 +15,8 @@ const changePkgName = (name) => {
   const version = require('../lerna.json').version;
 
   const pkgs = getPackages();
-  console.log(pkgs)
   pkgs.forEach((shortName) => {
-    const name = shortName === 'alita' ? shortName : `@alitajs-templates/${changePkgName(shortName)}`;
+    const name = `@alitajs-templates/${changePkgName(shortName)}`;
 
     const pkgJSONPath = join(
       __dirname,
@@ -54,7 +53,7 @@ const changePkgName = (name) => {
           type: 'git',
           url: 'https://github.com/alitajs/templates',
         },
-        keywords: ['umi', 'alita'],
+        keywords: ['umi', 'alita', 'templates', `${shortName}`],
         authors: [
           'xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)',
         ],
@@ -63,23 +62,6 @@ const changePkgName = (name) => {
         homepage: `https://github.com/alitajs/templates/tree/master/${shortName}#readme`,
         private: true,
       };
-      if (pkgJSONExists) {
-        const pkg = require(pkgJSONPath);
-        [
-          'dependencies',
-          'devDependencies',
-          'peerDependencies',
-          'bin',
-          'files',
-          'authors',
-          'types',
-          'sideEffects',
-          'main',
-          'module',
-        ].forEach((key) => {
-          if (pkg[key]) json[key] = pkg[key];
-        });
-      }
       writeFileSync(pkgJSONPath, `${JSON.stringify(json, null, 2)}\n`);
     }
 
@@ -141,7 +123,7 @@ export default ${shortName};
     if (args.force || !existsSync(lessPath)) {
       writeFileSync(lessPath, `.center {
   // 开发时请移除这个 .demo
-  .demo{
+  .demo {
     padding-top: 100px;
     text-align: 'center';
   }
