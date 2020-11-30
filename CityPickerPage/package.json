@@ -1,9 +1,9 @@
 {
   "name": "@alitajs-templates/citypicker",
   "version": "0.0.1",
-  "description": "页面型的带搜索的城市选择器",
+  "description": "带搜索的城市选择器-版本3",
   "tplType": "通用",
-  "tplSubType": "城市选择",
+  "tplSubType": "带搜索的城市选择器",
   "main": "src/index.js",
   "template": {
     "navbar": {
@@ -26,10 +26,14 @@
     "alita"
   ],
   "authors": [
-    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)",
+    "hang1017 <437132124@qq.com> (https://github.com/hang1017)"
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
   "homepage": "https://github.com/alitajs/templates/tree/master/CityPickerPage#readme",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "pinyin-pro": "^1.0.7"
+  }
 }
