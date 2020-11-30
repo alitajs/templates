@@ -2,7 +2,7 @@
 import React, { FC, useState, useEffect, useRef } from 'react';
 import { SearchBar, List } from 'antd-mobile';
 import { pinyin } from 'pinyin-pro';
-import CityData from '../public/city.json';
+import CityData from '../assets/city.json';
 import { CityGrid, FirstCodeList, DataProps, FirstCodeProps } from '../components';
 import styles from './index.less';
 
