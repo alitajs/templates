@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "bootstrap": "node ./scripts/bootstrap.js",
+    "check-release": "cross-env CREATE_TEMPLATES_JSON=true alita build",
     "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
     "lint-staged": "lint-staged",
     "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx",
@@ -54,7 +55,7 @@
     "prettier": "^2.0.2",
     "stylelint": "^13.0.0",
     "typescript": "^4.0.3",
-    "umi-plugin-templates-devtool": "^0.0.3",
+    "umi-plugin-templates-devtool": "0.0.4",
     "yorkie": "^2.0.0"
   },
   "checkFiles": [
