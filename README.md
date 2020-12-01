@@ -37,6 +37,22 @@ yarn start EmptyPage
   },
 ```
 
+### 截图
+
+```bash
+yarn screenshot
+```
+
+只执行某一个页面的截图，如更新截图或者是新增页面开发完成时，
+
+```bash
+yarn screenshot --path abcpage // 此处忽略文件名大小写
+```
+
+### 测试
+
+修改后的代码，会执行截图，与原来的截图，比对，如果页面有修改，请先更新页面截图，如果修改后的页面与原来的页面不同，会报错，并且在模版目录下生成 `diff.png` 文件。
+
 ### 资源
 
 所有的灰色图片都使用这个链接 https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image 

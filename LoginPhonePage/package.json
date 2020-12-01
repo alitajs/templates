@@ -28,6 +28,9 @@
   "authors": [
     "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
   ],
+  "dependencies": {
+    "@alitajs/antd-plus": "^2.4.2"
+  },
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
   "homepage": "https://github.com/alitajs/templates/tree/master/LoginPhonePage#readme",

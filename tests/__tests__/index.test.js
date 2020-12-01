@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const diffImage = require('block-screenshot/src/screenshot');
+const diffImage = require('@ant-design/pro-cli/src/screenshot');
 const path = require('path');
 
 jest.setTimeout(50000000);
@@ -8,6 +8,8 @@ describe('Pro Block', () => {
     const diffFileList = await diffImage({
       cwd: path.join(__dirname, '../../'),
       diff: true,
+      mobile: true,
+      path: 'setpage'
     });
     expect(diffFileList.length).toBe(0);
   });
