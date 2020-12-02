@@ -2,7 +2,7 @@
 import React, { FC, useState, useEffect, useRef } from 'react';
 import { SearchBar, List } from 'antd-mobile';
 import { pinyin } from 'pinyin-pro';
-import CityData from '../assets/city.json';
+import CityData from '@bang88/china_city_data';
 import { CityGrid, FirstCodeList, DataProps, FirstCodeProps } from '../components';
 import styles from './index.less';
 
@@ -24,8 +24,25 @@ const CityPickerPage: FC<PageProps> = () => {
    * 页面初始化
    */
   useEffect(() => {
-    const cData = {};
+    // 对省市区县数据进行处理，只取市级城市或者省级城市名称
+    const datas: { id: any; name: any }[] = [];
     CityData.forEach((item: any) => {
+      if (item?.children && item?.children.length) {
+        item?.children.forEach((cityItem: any) => {
+          datas.push({
+            id: cityItem?.value,
+            name: cityItem?.label,
+          });
+        });
+      } else {
+        datas.push({
+          id: item?.value,
+          name: item?.label,
+        });
+      }
+    });
+    const cData = {};
+    datas.forEach((item: any) => {
       const firstCode = pinyin(item.name, { pattern: 'initial' }).trim()[0];
       if (cData[firstCode]) {
         cData[firstCode].push(item);
