@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 import styles from './index.less';
 
 export interface MainCardDataProps {
@@ -16,7 +16,7 @@ interface PageProps {}
 const BgImg =
   'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image';
 
-const mData = [
+const data = [
   {
     id: '1',
     img: BgImg,
@@ -52,8 +52,6 @@ const mData = [
 ];
 
 const ListDiallelImagePage: FC<PageProps> = () => {
-  const [data] = useState(mData);
-
   /**
    * 点击事件
    */
