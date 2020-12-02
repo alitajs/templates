@@ -2,8 +2,8 @@
   "name": "@alitajs-templates/empty",
   "version": "0.0.1",
   "description": "一个空白的页面，一切都从这里开始！",
-  "tplType": "无",
-  "tplSubType": "无",
+  "tplType": "空白页",
+  "tplSubType": "空白页",
   "main": "src/index.js",
   "template": {
     "navbar": {
