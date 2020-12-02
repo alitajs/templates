@@ -29,7 +29,7 @@ const mData = [
     id: '2',
     img: BgImg,
     title: '欧舒丹甜蜜樱',
-    account: 378,
+    account: 40,
     saleNum: 20111,
     tip: '最高返9元',
   },
@@ -42,6 +42,13 @@ const mData = [
     tip: '最高返9元',
     tipList: ['积分兑换'],
   },
+  {
+    id: '4',
+    img: BgImg,
+    title: '欧舒丹甜蜜樱花沐浴啫喱/身体乳套装',
+    account: 40,
+    saleNum: 20111,
+  },
 ];
 
 const ListDiallelImagePage: FC<PageProps> = () => {
@@ -53,7 +60,7 @@ const ListDiallelImagePage: FC<PageProps> = () => {
   const itemClick = (e: MainCardDataProps) => console.log(e);
 
   return (
-    <div className={styles.center}>
+    <div className={styles.listDiallelImageContainer}>
       <div className={styles.dataContainer}>
         {data.map((item: MainCardDataProps) => (
           <div className={styles.dataItem} key={item?.id} onClick={() => itemClick(item)}>
