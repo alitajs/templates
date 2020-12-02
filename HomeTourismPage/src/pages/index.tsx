@@ -306,7 +306,7 @@ const HomeTourismPage: FC<PageProps> = () => {
         </Carousel>
       </WingBlank>
       <div className={styles.tabsStyle}>
-        <Tabs tabs={tabs} renderTabBar={(props) => <Tabs.DefaultTabBar {...props} page={5} />}>
+        <Tabs tabs={tabs}  tabBarUnderlineStyle={{ height: '0.04rem', backgroundColor: '#1677FF' }} renderTabBar={(props) => <Tabs.DefaultTabBar {...props} page={5} />}>
           <Masonry
             elementType={'div'}
             disableImagesLoaded={false}
