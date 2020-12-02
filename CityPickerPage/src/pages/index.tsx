@@ -2,7 +2,7 @@
 import React, { FC, useState, useEffect, useRef } from 'react';
 import { SearchBar, List } from 'antd-mobile';
 import { pinyin } from 'pinyin-pro';
-import CityData from '../assets/city.json';
+import CityData from '@alitajs/china-city-data';
 import { CityGrid, FirstCodeList, DataProps, FirstCodeProps } from '../components';
 import styles from './index.less';
 
@@ -25,12 +25,13 @@ const CityPickerPage: FC<PageProps> = () => {
    */
   useEffect(() => {
     const cData = {};
+
     CityData.forEach((item: any) => {
-      const firstCode = pinyin(item.name, { pattern: 'initial' }).trim()[0];
+      const firstCode = pinyin(item?.label, { pattern: 'initial' }).trim()[0];
       if (cData[firstCode]) {
         cData[firstCode].push(item);
       } else {
-        cData[firstCode] = [{ ...item, firstCode }];
+        cData[firstCode] = [{ ...item }];
       }
     });
 
@@ -124,12 +125,12 @@ const CityPickerPage: FC<PageProps> = () => {
               <List>
                 {(cityData[code] || []).map((item: DataProps) => (
                   <Item
-                    key={`${code}-${item?.id}`}
+                    key={`${code}-${item?.value}`}
                     onClick={() => {
                       cityClick(item);
                     }}
                   >
-                    {item?.name}
+                    {item?.label}
                   </Item>
                 ))}
               </List>
