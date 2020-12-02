@@ -2,7 +2,7 @@
 import React, { FC, useState, useEffect, useRef } from 'react';
 import { SearchBar, List } from 'antd-mobile';
 import { pinyin } from 'pinyin-pro';
-import CityData from '@bang88/china_city_data';
+import CityData from '@alitajs/china-city-data';
 import { CityGrid, FirstCodeList, DataProps, FirstCodeProps } from '../components';
 import styles from './index.less';
 
@@ -24,30 +24,14 @@ const CityPickerPage: FC<PageProps> = () => {
    * 页面初始化
    */
   useEffect(() => {
-    // 对省市区县数据进行处理，只取市级城市或者省级城市名称
-    const datas: { id: any; name: any }[] = [];
-    CityData.forEach((item: any) => {
-      if (item?.children && item?.children.length) {
-        item?.children.forEach((cityItem: any) => {
-          datas.push({
-            id: cityItem?.value,
-            name: cityItem?.label,
-          });
-        });
-      } else {
-        datas.push({
-          id: item?.value,
-          name: item?.label,
-        });
-      }
-    });
     const cData = {};
-    datas.forEach((item: any) => {
-      const firstCode = pinyin(item.name, { pattern: 'initial' }).trim()[0];
+
+    CityData.forEach((item: any) => {
+      const firstCode = pinyin(item?.label, { pattern: 'initial' }).trim()[0];
       if (cData[firstCode]) {
         cData[firstCode].push(item);
       } else {
-        cData[firstCode] = [{ ...item, firstCode }];
+        cData[firstCode] = [{ ...item }];
       }
     });
 
@@ -141,12 +125,12 @@ const CityPickerPage: FC<PageProps> = () => {
               <List>
                 {(cityData[code] || []).map((item: DataProps) => (
                   <Item
-                    key={`${code}-${item?.id}`}
+                    key={`${code}-${item?.value}`}
                     onClick={() => {
                       cityClick(item);
                     }}
                   >
-                    {item?.name}
+                    {item?.label}
                   </Item>
                 ))}
               </List>
