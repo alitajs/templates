@@ -11,7 +11,7 @@
     "lint:prettier": "prettier --check \"**/*\" --end-of-line auto",
     "lint:style": "stylelint --fix \"**/*.less\" --syntax less",
     "prettier": "prettier -c --write \"**/*\"",
-    "screenshot": "DEBUG=pro-cli pro screenshot --mobile",
+    "screenshot": "pro screenshot --mobile",
     "start": "alita dev",
     "build": "alita build",
     "test": "umi-test"
