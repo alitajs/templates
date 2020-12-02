@@ -3,7 +3,7 @@
   "npmClient": "yarn",
   "useWorkspaces": true,
   "changelog": {
-    "repo": "alitajs/alita",
+    "repo": "alitajs/templates",
     "labels": {
       "pr(enhancement)": ":rocket: Enhancement",
       "pr(bug)": ":bug: Bug Fix",

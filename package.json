@@ -11,10 +11,10 @@
     "lint:prettier": "prettier --check \"**/*\" --end-of-line auto",
     "lint:style": "stylelint --fix \"**/*.less\" --syntax less",
     "prettier": "prettier -c --write \"**/*\"",
-    "screenshot": "pro screenshot",
+    "screenshot": "pro screenshot --mobile",
     "start": "alita dev",
     "build": "alita build",
-    "test": "umi test"
+    "test": "umi-test"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
@@ -30,12 +30,15 @@
     "**/*.{js,ts,tsx}": "npm run lint-staged:js"
   },
   "dependencies": {
-    "@alitajs/antd-plus": "^2.4.2",
     "alita": "^2.6.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
+  "resolutions":{
+    "underscore": "1.12.0"
+  },
   "devDependencies": {
+    "@ant-design/pro-cli": "^2.0.3",
     "@testing-library/react": "^10.4.7",
     "@types/classnames": "^2.2.7",
     "@types/jest": "^26.0.15",
@@ -55,7 +58,7 @@
     "prettier": "^2.0.2",
     "stylelint": "^13.0.0",
     "typescript": "^4.0.3",
-    "umi-plugin-templates-devtool": "0.0.4",
+    "umi-plugin-templates-devtool": "0.0.5",
     "yorkie": "^2.0.0"
   },
   "checkFiles": [
