@@ -1,7 +1,7 @@
 {
   "name": "@alitajs-templates/citypicker",
   "version": "0.0.1",
-  "description": "带搜索的城市选择器-版本3",
+  "description": "带搜索的城市选择器",
   "tplType": "通用",
   "tplSubType": "带搜索的城市选择器",
   "main": "src/index.js",

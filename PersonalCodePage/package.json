@@ -1,7 +1,7 @@
 {
   "name": "@alitajs-templates/personalcode",
   "version": "0.0.1",
-  "description": "个人码-版本2",
+  "description": "个人码",
   "tplType": "通用",
   "tplSubType": "码页面",
   "main": "src/index.js",

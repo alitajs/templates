@@ -1,7 +1,7 @@
 {
   "name": "@alitajs-templates/resultsstep",
   "version": "0.0.1",
-  "description": "带步骤的支付类结果页-版本1",
+  "description": "带步骤的支付类结果页",
   "tplType": "通用",
   "tplSubType": "结果页",
   "main": "src/index.js",
