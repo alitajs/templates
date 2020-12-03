@@ -1,0 +1,111 @@
+.container {
+  .header {
+    height: 248px;
+    background: #FFFFFF;
+    padding: 24px;
+  }
+
+  .listStyle {
+    margin: 24px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    .myShopNum {
+      display: block;
+      width: 158px;
+      height: 42px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+    }
+
+    .check {
+      display: block;
+      font-size: 24px;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 40px;
+      width: 136px;
+      height: 40px;
+      background: #333333;
+      border-radius: 0px 0px 8px 8px;
+      opacity: 0.6;
+      text-align: center;
+      position: absolute;
+      top: 119px;
+    }
+
+    .unChecking {
+      display: none;
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+    }
+
+    .place {
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+    }
+
+    .introduce {
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+    }
+
+    :global {
+      .am-list-header {
+        padding: 24px !important;
+        background-color: #FFFFFF;
+
+        .am-button {
+          display: inline-block;
+          width: 144px;
+          height: 49px;
+          background: #1677FF;
+          border-radius: 24px;
+
+          span {
+            display: block;
+            width: 144px;
+            height: 49px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 49px;
+          }
+        }
+      }
+
+      .am-list-item {
+        padding-left: 0;
+        margin-left: 24px;
+        margin-right: 24px;
+        height: 184px;
+        border-bottom: 2px solid #EEEEEE !important;
+
+        .am-list-line {
+          padding-right: 24px;
+          border-bottom: none;
+        }
+
+        .am-list-thumb {
+          img {
+            width: 136px;
+            height: 136px;
+            border-radius: 8px;
+          }
+        }
+      }
+
+      .am-list-item:last-of-type {
+        border-bottom: none !important;
+      }
+    }
+  }
+}
