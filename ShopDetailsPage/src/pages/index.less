@@ -1,0 +1,151 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .headerList {
+    :global {
+      .am-list-item {
+        padding-left: 24px;
+        height: 218px;
+
+        .am-list-line {
+          padding-right: 24px;
+
+          .am-list-content {
+            span {
+              font-size: 36px;
+              font-weight: 500;
+              color: #333333;
+            }
+          }
+
+          .am-list-extra {
+            padding-top: 0;
+          }
+
+          .am-list-brief {
+            margin-top: 4px !important;
+            font-size: 30px;
+            font-weight: 400;
+            color: #999999;
+          }
+        }
+      }
+    }
+  }
+
+  .listStyle {
+    .listMainTitle {
+      display: inline-block;
+      width: auto;
+      height: 42px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+    }
+
+    .listSubTitle {
+      display: inline-block;
+      width: auto;
+      height: 42px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 42px;
+      vertical-align: top;
+      margin-left: 24px;
+    }
+
+    :global {
+      .am-list-header {
+        padding-top: 40px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+      }
+
+      .am-list-body {
+        margin: auto 24px;
+        border-radius: 16px;
+        overflow: hidden;
+
+        .am-list-item {
+          height: 96px;
+
+          .am-list-content {
+            overflow: unset;
+            font-size: 34px;
+            font-weight: 400;
+            color: #333333;
+
+          }
+
+          .am-list-extra {
+            font-size: 30px;
+            font-weight: 400;
+            color: #999999;
+          }
+
+          .am-list-arrow {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .businessShowTitle {
+    display: block;
+    width: 120px;
+    height: 42px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 42px;
+    margin: 40px auto auto 24px;
+  }
+
+  .waterfall {
+    width: calc(50% - 16px);
+    margin: 16px 8px auto 8px;
+
+    .businessIntroduceTitle {
+      display: block;
+      width: 104px;
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 37px;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .isBottom {
+    height: 117px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #CCCCCC;
+    margin-top: 24px;
+
+    :global {
+      .am-flexbox-item {
+        text-align: center;
+      }
+    }
+  }
+
+  .payBtn {
+    margin: 40px 24px 292px 24px;
+
+    :global {
+      .am-button {
+        background: #1677FF;
+        border-radius: 8px;
+        font-size: 36px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
