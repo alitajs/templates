@@ -1,0 +1,40 @@
+{
+  "name": "@alitajs-templates/shopdetails",
+  "version": "0.0.1",
+  "description": "店铺详情",
+  "tplType": "商业及生活服务",
+  "tplSubType": "企业展示",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "标题",
+      "backgroundColor": "#FFFFFF",
+      "display": "flex",
+      "color": "#333333"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita",
+    "templates",
+    "ShopDetailsPage"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/ShopDetailsPage#readme",
+  "private": true,
+  "dependencies": {
+    "react-masonry-component": "^6.2.1"
+  }
+}
