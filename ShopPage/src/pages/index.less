@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .headerBanner {
+    z-index: 999;
+    height: 164px;
+    background-color: #168BFF;
+    position: relative;
+
+    img {
+      width: calc(100% - 48px);
+      height: 280px;
+      margin: 24px;
+      border-radius: 16px;
+    }
+
+    .headerBannerNum {
+      display: block;
+      position: absolute;
+      width: 141px;
+      height: 40px;
+      background: #1677FF;
+      border-radius: 4px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 40px;
+      text-align: center;
+      right: 48px;
+      top: 240px;
+    }
+  }
+
+  .headerBackGround {
+    height: 164px !important;
+    background-color: #ffffff;
+  }
+
+  .listMainTitle {
+    display: inline-block;
+    width: auto;
+    height: 42px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 42px;
+  }
+
+  .listSubTitle {
+    display: inline-block;
+    width: auto;
+    height: 42px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 42px;
+    vertical-align: top;
+    margin-left: 24px;
+  }
+
+  .listStyle {
+    :global {
+      .am-list-body {
+        margin: auto 24px;
+        border-radius: 16px;
+        overflow: hidden;
+
+        .am-list-content {
+          overflow: unset;
+        }
+
+        .am-list-extra {
+          font-size: 30px;
+          font-weight: 400;
+          color: #999999;
+        }
+      }
+    }
+  }
+
+  .businessShowTitle {
+    display: block;
+    width: 120px;
+    height: 42px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 42px;
+    margin: 40px auto auto 24px;
+  }
+
+  .waterfall {
+    width: calc(50% - 16px);
+    margin: 16px 8px auto 8px;
+
+    .businessIntroduceTitle {
+      display: block;
+      width: 104px;
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 37px;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .isBottom {
+    height: 117px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #CCCCCC;
+    margin-top: 24px;
+
+    :global {
+      .am-flexbox-item {
+        text-align: center;
+      }
+    }
+  }
+
+  .payBtn {
+    margin: 40px 24px 292px 24px;
+
+    :global {
+      .am-button {
+        background: #1677FF;
+        border-radius: 8px;
+        font-size: 36px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "@alitajs-templates/accountmix",
   "version": "0.0.1",
-  "description": "混合型列表版本2",
+  "description": "混合型列表",
   "tplType": "通用",
   "tplSubType": "我的",
   "main": "src/index.js",

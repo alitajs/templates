@@ -1,7 +1,7 @@
 {
   "name": "@alitajs-templates/resultsicon",
   "version": "0.0.1",
-  "description": "结果页带图标-版本2",
+  "description": "结果页带图标",
   "tplType": "通用",
   "tplSubType": "结果页",
   "main": "src/index.js",

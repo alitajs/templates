@@ -1,18 +1,18 @@
 {
-  "name": "@alitajs-templates/personalcode",
+  "name": "@alitajs-templates/hometourism",
   "version": "0.0.1",
-  "description": "个人码",
-  "tplType": "通用",
-  "tplSubType": "码页面",
+  "description": "旅游类商品展示",
+  "tplType": "电商零售",
+  "tplSubType": "电商门户",
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "我的二维码及吱口令",
-      "backgroundColor": "rgba(22, 129, 255, 1)",
+      "title": "商品展示",
+      "backgroundColor": "#1678ff",
       "display": "flex",
       "color": "#FFFFFF"
     },
-    "backgroundColor": ""
+    "backgroundColor": "#F5F5F5"
   },
   "scripts": {
     "dev": "alita dev"
@@ -30,6 +30,9 @@
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
-  "homepage": "https://github.com/alitajs/templates/tree/master/PersonalCodePage#readme",
-  "private": true
+  "homepage": "https://github.com/alitajs/templates/tree/master/HomeTourismPage#readme",
+  "private": true,
+  "dependencies": {
+    "react-masonry-component": "^6.2.1"
+  }
 }

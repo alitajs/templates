@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "bootstrap": "node ./scripts/bootstrap.js",
-    "check-release": "cross-env CREATE_TEMPLATES_JSON=true alita build",
+    "create-temp-json": "cross-env CREATE_TEMPLATES_JSON=true alita build",
     "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
     "lint-staged": "lint-staged",
     "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx",
@@ -30,11 +30,15 @@
     "**/*.{js,ts,tsx}": "npm run lint-staged:js"
   },
   "dependencies": {
+    "@alitajs/antd-plus": "^2.5.0",
+    "@alitajs/china-city-data": "^1.0.2",
     "alita": "^2.6.2",
+    "pinyin-pro": "^1.0.7",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-masonry-component": "^6.2.1"
   },
-  "resolutions":{
+  "resolutions": {
     "underscore": "1.12.0"
   },
   "devDependencies": {
@@ -58,7 +62,7 @@
     "prettier": "^2.0.2",
     "stylelint": "^13.0.0",
     "typescript": "^4.0.3",
-    "umi-plugin-templates-devtool": "0.0.5",
+    "umi-plugin-templates-devtool": "0.0.7",
     "yorkie": "^2.0.0"
   },
   "checkFiles": [

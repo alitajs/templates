@@ -34,7 +34,7 @@
       }, {
         "key": "AccountMixPage",
         "name": "@alitajs-templates/accountmix",
-        "description": "混合型列表版本2",
+        "description": "混合型列表",
         "url": "https://github.com/alitajs/templates/tree/master/AccountMixPage",
         "path": "AccountMixPage",
         "img": "https://raw.githubusercontent.com/alitajs/templates/master/AccountMixPage/snapshot.png?raw=true",
@@ -45,7 +45,7 @@
       "带搜索的城市选择器": [{
         "key": "CityPickerPage",
         "name": "@alitajs-templates/citypicker",
-        "description": "带搜索的城市选择器-版本3",
+        "description": "带搜索的城市选择器",
         "url": "https://github.com/alitajs/templates/tree/master/CityPickerPage",
         "path": "CityPickerPage",
         "img": "https://raw.githubusercontent.com/alitajs/templates/master/CityPickerPage/snapshot.png?raw=true",
@@ -56,7 +56,7 @@
       "码页面": [{
         "key": "CollectionCodePage",
         "name": "@alitajs-templates/collectioncode",
-        "description": "收款码-版本2",
+        "description": "收款码",
         "url": "https://github.com/alitajs/templates/tree/master/CollectionCodePage",
         "path": "CollectionCodePage",
         "img": "https://raw.githubusercontent.com/alitajs/templates/master/CollectionCodePage/snapshot.png?raw=true",
@@ -66,7 +66,7 @@
       }, {
         "key": "PaymentCodePage",
         "name": "@alitajs-templates/paymentcode",
-        "description": "付款码-版本3",
+        "description": "付款码",
         "url": "https://github.com/alitajs/templates/tree/master/PaymentCodePage",
         "path": "PaymentCodePage",
         "img": "https://raw.githubusercontent.com/alitajs/templates/master/PaymentCodePage/snapshot.png?raw=true",
@@ -76,7 +76,7 @@
       }, {
         "key": "PersonalCodePage",
         "name": "@alitajs-templates/personalcode",
-        "description": "个人码-版本2",
+        "description": "个人码",
         "url": "https://github.com/alitajs/templates/tree/master/PersonalCodePage",
         "path": "PersonalCodePage",
         "img": "https://raw.githubusercontent.com/alitajs/templates/master/PersonalCodePage/snapshot.png?raw=true",
@@ -140,7 +140,7 @@
       "结果页": [{
         "key": "ResultsIconPage",
         "name": "@alitajs-templates/resultsicon",
-        "description": "结果页带图标-版本2",
+        "description": "结果页带图标",
         "url": "https://github.com/alitajs/templates/tree/master/ResultsIconPage",
         "path": "ResultsIconPage",
         "img": "https://raw.githubusercontent.com/alitajs/templates/master/ResultsIconPage/snapshot.png?raw=true",
@@ -150,7 +150,7 @@
       }, {
         "key": "ResultsImagePage",
         "name": "@alitajs-templates/resultsimage",
-        "description": "结果页带插画-版本2",
+        "description": "结果页带插画",
         "url": "https://github.com/alitajs/templates/tree/master/ResultsImagePage",
         "path": "ResultsImagePage",
         "img": "https://raw.githubusercontent.com/alitajs/templates/master/ResultsImagePage/snapshot.png?raw=true",
@@ -160,7 +160,7 @@
       }, {
         "key": "ResultsStepPage",
         "name": "@alitajs-templates/resultsstep",
-        "description": "带步骤的支付类结果页-版本1",
+        "description": "带步骤的支付类结果页",
         "url": "https://github.com/alitajs/templates/tree/master/ResultsStepPage",
         "path": "ResultsStepPage",
         "img": "https://raw.githubusercontent.com/alitajs/templates/master/ResultsStepPage/snapshot.png?raw=true",
@@ -170,7 +170,7 @@
       }, {
         "key": "ResultsTestPage",
         "name": "@alitajs-templates/resultstest",
-        "description": "结果页带插画-版本2",
+        "description": "结果页带插画",
         "url": "https://github.com/alitajs/templates/tree/master/ResultsTestPage",
         "path": "ResultsTestPage",
         "img": "https://raw.githubusercontent.com/alitajs/templates/master/ResultsTestPage/snapshot.png?raw=true",
@@ -202,7 +202,7 @@
       }, {
         "key": "SearchTabsPage",
         "name": "@alitajs-templates/searchtabs",
-        "description": "搜索结果页面选择卡类型-版本1",
+        "description": "搜索结果页面选择卡类型",
         "url": "https://github.com/alitajs/templates/tree/master/SearchTabsPage",
         "path": "SearchTabsPage",
         "img": "https://raw.githubusercontent.com/alitajs/templates/master/SearchTabsPage/snapshot.png?raw=true",
@@ -228,13 +228,57 @@
       "电商门户": [{
         "key": "HomePromotionPage",
         "name": "@alitajs-templates/homepromotion",
-        "description": "促销类商品展示-版本2",
+        "description": "促销类商品展示",
         "url": "https://github.com/alitajs/templates/tree/master/HomePromotionPage",
         "path": "HomePromotionPage",
         "img": "https://raw.githubusercontent.com/alitajs/templates/master/HomePromotionPage/snapshot.png?raw=true",
         "tplType": "电商零售",
         "tplSubType": "电商门户",
         "previewUrl": "https://templates.alitajs.com/#/HomePromotionPage"
+      }, {
+        "key": "HomeTourismPage",
+        "name": "@alitajs-templates/hometourism",
+        "description": "旅游类商品展示",
+        "url": "https://github.com/alitajs/templates/tree/master/HomeTourismPage",
+        "path": "HomeTourismPage",
+        "img": "https://raw.githubusercontent.com/alitajs/templates/master/HomeTourismPage/snapshot.png?raw=true",
+        "tplType": "电商零售",
+        "tplSubType": "电商门户",
+        "previewUrl": "https://templates.alitajs.com/#/HomeTourismPage"
+      }],
+      "列表页": [{
+        "key": "ListDiallelImagePage",
+        "name": "@alitajs-templates/listdiallelimage",
+        "description": "双列商品带图片",
+        "url": "https://github.com/alitajs/templates/tree/master/ListDiallelImagePage",
+        "path": "ListDiallelImagePage",
+        "img": "https://raw.githubusercontent.com/alitajs/templates/master/ListDiallelImagePage/snapshot.png?raw=true",
+        "tplType": "电商零售",
+        "tplSubType": "列表页",
+        "previewUrl": "https://templates.alitajs.com/#/ListDiallelImagePage"
+      }]
+    },
+    "商业及生活服务": {
+      "企业展示": [{
+        "key": "ShopDetailsPage",
+        "name": "@alitajs-templates/shopdetails",
+        "description": "店铺详情",
+        "url": "https://github.com/alitajs/templates/tree/master/ShopDetailsPage",
+        "path": "ShopDetailsPage",
+        "img": "https://raw.githubusercontent.com/alitajs/templates/master/ShopDetailsPage/snapshot.png?raw=true",
+        "tplType": "商业及生活服务",
+        "tplSubType": "企业展示",
+        "previewUrl": "https://templates.alitajs.com/#/ShopDetailsPage"
+      }, {
+        "key": "ShopPage",
+        "name": "@alitajs-templates/shop",
+        "description": "商户商品展示",
+        "url": "https://github.com/alitajs/templates/tree/master/ShopPage",
+        "path": "ShopPage",
+        "img": "https://raw.githubusercontent.com/alitajs/templates/master/ShopPage/snapshot.png?raw=true",
+        "tplType": "商业及生活服务",
+        "tplSubType": "企业展示",
+        "previewUrl": "https://templates.alitajs.com/#/ShopPage"
       }]
     }
   }

@@ -1,13 +1,13 @@
 {
-  "name": "@alitajs-templates/citypicker",
+  "name": "@alitajs-templates/shopdetails",
   "version": "0.0.1",
-  "description": "带搜索的城市选择器",
-  "tplType": "通用",
-  "tplSubType": "带搜索的城市选择器",
+  "description": "店铺详情",
+  "tplType": "商业及生活服务",
+  "tplSubType": "企业展示",
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "城市选择",
+      "title": "标题",
       "backgroundColor": "#FFFFFF",
       "display": "flex",
       "color": "#333333"
@@ -23,18 +23,18 @@
   },
   "keywords": [
     "umi",
-    "alita"
+    "alita",
+    "templates",
+    "ShopDetailsPage"
   ],
   "authors": [
-    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)",
-    "hang1017 <437132124@qq.com> (https://github.com/hang1017)"
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
-  "homepage": "https://github.com/alitajs/templates/tree/master/CityPickerPage#readme",
+  "homepage": "https://github.com/alitajs/templates/tree/master/ShopDetailsPage#readme",
   "private": true,
   "dependencies": {
-    "@alitajs/china-city-data": "^1.0.2",
-    "pinyin-pro": "^1.0.7"
+    "react-masonry-component": "^6.2.1"
   }
 }
