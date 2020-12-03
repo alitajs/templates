@@ -1,18 +1,18 @@
 {
-  "name": "@alitajs-templates/personalcode",
+  "name": "@alitajs-templates/shop",
   "version": "0.0.1",
-  "description": "个人码",
-  "tplType": "通用",
-  "tplSubType": "码页面",
+  "description": "商户商品展示",
+  "tplType": "商业及生活服务",
+  "tplSubType": "企业展示",
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "我的二维码及吱口令",
-      "backgroundColor": "rgba(22, 129, 255, 1)",
+      "title": "商户商铺类",
+      "backgroundColor": "#168BFF",
       "display": "flex",
       "color": "#FFFFFF"
     },
-    "backgroundColor": ""
+    "backgroundColor": "#F5F5F5"
   },
   "scripts": {
     "dev": "alita dev"
@@ -23,13 +23,18 @@
   },
   "keywords": [
     "umi",
-    "alita"
+    "alita",
+    "templates",
+    "ShopPage"
   ],
   "authors": [
     "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
-  "homepage": "https://github.com/alitajs/templates/tree/master/PersonalCodePage#readme",
-  "private": true
+  "homepage": "https://github.com/alitajs/templates/tree/master/ShopPage#readme",
+  "private": true,
+  "dependencies": {
+    "react-masonry-component": "^6.2.1"
+  }
 }

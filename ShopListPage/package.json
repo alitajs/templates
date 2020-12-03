@@ -1,18 +1,18 @@
 {
-  "name": "@alitajs-templates/personalcode",
+  "name": "@alitajs-templates/shoplist",
   "version": "0.0.1",
-  "description": "个人码",
-  "tplType": "通用",
-  "tplSubType": "码页面",
+  "description": "商户管理",
+  "tplType": "商业及生活服务",
+  "tplSubType": "企业展示",
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "我的二维码及吱口令",
-      "backgroundColor": "rgba(22, 129, 255, 1)",
+      "title": "商户管理类",
+      "backgroundColor": "#FFFFFF",
       "display": "flex",
-      "color": "#FFFFFF"
+      "color": "#333333"
     },
-    "backgroundColor": ""
+    "backgroundColor": "#F5F5F5"
   },
   "scripts": {
     "dev": "alita dev"
@@ -23,13 +23,15 @@
   },
   "keywords": [
     "umi",
-    "alita"
+    "alita",
+    "templates",
+    "ShopListPage"
   ],
   "authors": [
     "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
-  "homepage": "https://github.com/alitajs/templates/tree/master/PersonalCodePage#readme",
+  "homepage": "https://github.com/alitajs/templates/tree/master/ShopListPage#readme",
   "private": true
 }

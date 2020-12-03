@@ -1,7 +1,7 @@
 {
   "name": "@alitajs-templates/searchtabs",
   "version": "0.0.1",
-  "description": "搜索结果页面选择卡类型-版本1",
+  "description": "搜索结果页面选择卡类型",
   "tplType": "通用",
   "tplSubType": "搜索结果",
   "main": "src/index.js",

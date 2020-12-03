@@ -1,7 +1,7 @@
 {
   "name": "@alitajs-templates/paymentcode",
   "version": "0.0.1",
-  "description": "付款码-版本3",
+  "description": "付款码",
   "tplType": "通用",
   "tplSubType": "码页面",
   "main": "src/index.js",
