@@ -11,7 +11,7 @@
     "lint:prettier": "prettier --check \"**/*\" --end-of-line auto",
     "lint:style": "stylelint --fix \"**/*.less\" --syntax less",
     "prettier": "prettier -c --write \"**/*\"",
-    "screenshot": "pro screenshot --mobile",
+    "screenshot": "DEBUG=pro-cli pro screenshot --mobile",
     "start": "alita dev",
     "build": "alita build",
     "test": "umi-test"
@@ -34,7 +34,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "resolutions":{
+  "resolutions": {
     "underscore": "1.12.0"
   },
   "devDependencies": {
