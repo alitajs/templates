@@ -1,0 +1,37 @@
+{
+  "name": "@alitajs-templates/express",
+  "version": "0.0.1",
+  "description": "查寄快递",
+  "tplType": "商业及生活服务",
+  "tplSubType": "快递行业",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "物流快递",
+      "backgroundColor": "#FFFFFF",
+      "display": "flex",
+      "color": "#333333"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita",
+    "templates",
+    "ExpressPage"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/ExpressPage#readme",
+  "private": true
+}
