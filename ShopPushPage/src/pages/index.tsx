@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { Flex, List, Grid, Carousel, Button } from 'antd-mobile';
-
 import styles from './index.less';
 
 interface PageProps {}
