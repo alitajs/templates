@@ -1,0 +1,37 @@
+{
+  "name": "@alitajs-templates/shoppush",
+  "version": "0.0.1",
+  "description": "商户内容推送",
+  "tplType": "商业及生活服务",
+  "tplSubType": "企业展示",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "商户内容类",
+      "backgroundColor": "#1678ff",
+      "display": "flex",
+      "color": "#FFFFFF"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita",
+    "templates",
+    "ShopPushPage"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/ShopPushPage#readme",
+  "private": true
+}
