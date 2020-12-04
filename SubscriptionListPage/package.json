@@ -1,0 +1,37 @@
+{
+  "name": "@alitajs-templates/subscriptionlist",
+  "version": "0.0.1",
+  "description": "订阅号消息列表",
+  "tplType": "商业及生活服务",
+  "tplSubType": "服务模块",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": " ",
+      "backgroundColor": "#FFFFFF",
+      "display": "flex",
+      "color": "#333333"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita",
+    "templates",
+    "SubscriptionListPage"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/SubscriptionListPage#readme",
+  "private": true
+}
