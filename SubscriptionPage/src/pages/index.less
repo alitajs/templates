@@ -1,0 +1,118 @@
+.listStyle {
+  margin: 24px;
+  border-radius: 16px;
+  overflow: hidden;
+
+  .newsList {
+    height: 128px !important;
+
+    :global {
+      .am-list-content {
+        width: auto;
+        height: 84px;
+        font-size: 30px;
+        font-weight: 500;
+        color: #333333;
+        margin-right: 56px;
+        white-space: pre-wrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+      }
+
+      .am-list-extra {
+        flex-basis: auto;
+      }
+    }
+  }
+
+  .listTitle {
+    height: 45px;
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    margin: 24px;
+  }
+
+  .articleTile {
+    display: block;
+    width: auto;
+    height: 41px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 42px;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+
+  .articleIntroduce {
+    display: block;
+    height: 74px;
+    white-space: pre-wrap;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 37px;
+    overflow: hidden;
+  }
+
+  .babelStyle {
+    display: inline-block;
+    width: 64px;
+    height: 40px;
+    background: #E7F1FF;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #1677FF;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .articleOrigin {
+    display: inline-block;
+    width: 96px;
+    height: 33px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 33px;
+    margin-left: 16px;
+  }
+
+  :global {
+    .am-list-header {
+      padding: 0;
+      background-color: #FFFFFF;
+
+      .am-flexbox {
+        height: 100%;
+      }
+    }
+
+    .am-list-body {
+      border-top: none;
+
+      .am-list-item {
+        padding-left: 0;
+        margin-left: 24px;
+
+        .am-list-line {
+          margin-right: 24px;
+          padding-right: 0px;
+
+          .am-list-content {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
