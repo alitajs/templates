@@ -1,0 +1,273 @@
+.container {
+  .headerList {
+    .title {
+      font-size: 36px;
+      font-weight: 400;
+      color: #FFFFFF;
+    }
+
+    .introduce {
+      font-size: 30px;
+      font-weight: 400;
+      color: #FFFFFF;
+    }
+
+    :global {
+      .am-list-item {
+        height: 168px;
+        background-color: #1678ff;
+        padding-left: 24px;
+
+        .am-list-thumb {
+          img {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .headerGrid {
+    height: 189px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    :global {
+      .am-grid-item-content {
+        padding-bottom: 24px !important;
+        padding-top: 24px !important;
+        flex: 1;
+
+        .am-grid-text {
+          width: 130px;
+          height: 37px;
+          font-size: 26px;
+          font-weight: 400;
+          color: #333333;
+          line-height: 37px;
+          margin-top: 16px !important;
+        }
+      }
+    }
+
+    img {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+    }
+  }
+
+  .carousel {
+    padding: 24px;
+  }
+
+  .triangle {
+    &:after {
+      content: '';
+      border: 20px solid;
+      border-color: transparent transparent #FFFFFF;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 350px;
+      left: 50px;
+      z-index: 666;
+    }
+  }
+
+  .listStyle {
+    margin: 24px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    .newsList {
+      height: 128px !important;
+
+      :global {
+        .am-list-content {
+          width: auto;
+          height: 84px;
+          font-size: 30px;
+          font-weight: 500;
+          color: #333333;
+          margin-right: 56px;
+          white-space: pre-wrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+        }
+
+        .am-list-extra {
+          flex-basis: auto;
+        }
+      }
+    }
+
+    .listTitle {
+      height: 45px;
+      line-height: 45px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      margin: 24px;
+    }
+
+    .articleTile {
+      display: block;
+      width: auto;
+      height: 41px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+      margin-bottom: 8px;
+    }
+
+    .articleIntroduce {
+      display: block;
+      white-space: pre-wrap;
+      font-size: 26px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 37px;
+    }
+
+    .babelStyle {
+      display: inline-block;
+      width: 64px;
+      height: 40px;
+      background: #E7F1FF;
+      border-radius: 4px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #1677FF;
+      line-height: 40px;
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .articleOrigin {
+      display: inline-block;
+      width: 96px;
+      height: 33px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 33px;
+      margin-left: 16px;
+    }
+
+    .checkDetail {
+      :global {
+        .am-list-content {
+          font-size: 30px;
+          font-weight: 400;
+          color: #333333;
+        }
+      }
+    }
+
+    .titleDigest {
+      height: 84px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+      white-space: pre-wrap;
+      overflow: hidden;
+    }
+
+    .introduceDigest {
+      height: 111px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+      white-space: pre-wrap;
+      overflow: hidden;
+    }
+
+    .newsIntroduce {
+      width: auto;
+      height: 44px;
+      font-size: 30px;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 42px;
+      overflow: hidden;
+      position: absolute;
+      top: 296px;
+      left: 24px;
+    }
+
+    .btnStyle {
+      .read {
+        width: 50%;
+        height: 42px;
+        font-size: 30px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 42px;
+        border: none;
+        position: relative;
+
+      }
+
+      .repay {
+        width: 50%;
+        height: 42px;
+        font-size: 30px;
+        font-weight: 400;
+        color: #1677FF;
+        line-height: 42px;
+        border: none;
+
+        &::after {
+          content: "";
+          width: 1px;
+          height: 40px;
+          background: #EEEEEE;
+          position: absolute;
+          left: 50%;
+        }
+      }
+    }
+
+    :global {
+      .am-list-header {
+        padding: 0;
+        background-color: #FFFFFF;
+
+
+        .am-flexbox {
+          height: 100%;
+        }
+      }
+
+      .am-list-body {
+        border-top: none;
+
+        .am-list-item {
+          padding-left: 0;
+          margin-left: 24px;
+
+          .am-list-line {
+            margin-right: 24px;
+            padding-right: 0px;
+
+            .am-list-content {
+              margin-top: 24px;
+              margin-bottom: 24px;
+              padding-top: 0;
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
