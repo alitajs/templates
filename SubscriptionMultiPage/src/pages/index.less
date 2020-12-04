@@ -1,0 +1,69 @@
+.listStyle {
+  margin: 24px;
+  border-radius: 16px;
+  overflow: hidden;
+
+  .newsIntroduce {
+    width: auto;
+    height: 44px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 42px;
+    overflow: hidden;
+    position: absolute;
+    top: 296px;
+    left: 24px;
+  }
+
+  .newsList {
+    height: 128px !important;
+
+    :global {
+      .am-list-content {
+        width: auto;
+        max-height: 84px;
+        font-size: 30px;
+        font-weight: 500;
+        color: #333333;
+        margin-right: 56px;
+        white-space: pre-wrap;
+        overflow: hidden;
+      }
+
+      .am-list-extra {
+        flex-basis: auto;
+      }
+    }
+  }
+
+  :global {
+    .am-list-header {
+      padding: 0;
+      background-color: #FFFFFF;
+
+      .am-flexbox {
+        height: 100%;
+      }
+    }
+
+    .am-list-body {
+      border-top: none;
+
+      .am-list-item {
+        padding-left: 0;
+        margin-left: 24px;
+
+        .am-list-line {
+          margin-right: 24px;
+          padding-right: 0px;
+
+          .am-list-content {
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
