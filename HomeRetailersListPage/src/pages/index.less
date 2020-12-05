@@ -71,11 +71,29 @@
   .listContainer {
     padding: 24px;
 
+    .renderHeader {
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+
+    }
+
     :global {
+
+      .am-list-header {
+        padding: 24px;
+      }
+
       .am-list-item {
         padding-left: 24px;
         padding-right: 24px;
         background-color: transparent;
+      }
+
+      .am-list {
+        border-radius: 16px;
+        background-color: #fff;
       }
 
       .am-list-line {
@@ -88,8 +106,9 @@
       }
 
       .am-list-body {
-        border: none;
-        border-radius: 16px;
+        border-bottom: none;
+        border-top: 1PX solid #eee;
+        border-radius: 0 0 16px 16px;
       }
 
       .am-list-body div:not(:last-child) .am-list-line {

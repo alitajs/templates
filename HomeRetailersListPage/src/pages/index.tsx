@@ -74,7 +74,7 @@ const HomeRetailersListPage: FC<PageProps> = () => {
         ))}
       </div>
       <div className={styles.listContainer}>
-        <List>
+        <List renderHeader={() => <div className={styles.renderHeader}>主标题</div>}>
           {listData.map((item) => (
             <Item key={item?.id}>
               <div className={styles.listItem} onClick={() => console.log(item)}>
