@@ -1,0 +1,61 @@
+.container {
+  padding: 24px;
+
+  .listContainer {
+    padding: 24px;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #fff;
+    border-radius: 16px;
+
+    .dataItem {
+      .dataImg {
+        width: 100%;
+        height: 160px;
+        border-radius: 8px;
+      }
+
+      .fullHeight {
+        height: 100%;
+      }
+
+      .dataTitle {
+        font-size: 30px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 42px;
+        padding-top: 8px;
+      }
+
+      .dataDesc {
+        font-size: 26px;
+        font-weight: 400;
+        color: #999999;
+        line-height: 37px;
+        padding-bottom: 2px;
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+
+        .realPrice {
+          font-size: 36px;
+          font-weight: 500;
+          color: #FF3B30;
+          line-height: 50px;
+        }
+
+        .originalPrice {
+          font-size: 22px;
+          font-weight: 400;
+          color: #B3B3B3;
+          line-height: 30px;
+          padding-left: 8px;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}
