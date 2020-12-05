@@ -19,7 +19,7 @@ const data = [
   },
   {
     img: BgImg,
-    title: '标题标题标题',
+    title: '标题标题标题标题标题标题标题标题标题标题标题标题',
     desc: '描述描述',
     tip: '新品上架',
     originalPrice: 80,
@@ -33,23 +33,26 @@ const ListColumnsWrongPage: FC<PageProps> = () => {
       <div className={styles.listContainer}>
         {data.map((item) => (
           <div className={styles.dataItem}>
-            <img
-              src={item?.img}
-              alt=""
+            <div
               className={classnames({
-                [styles.dataImg]: true,
+                [styles.imgContainer]: true,
                 [styles.fullHeight]: item?.allImg,
               })}
-            />
+            >
+              <img src={item?.img} alt="" className={styles.dataImg} />
+              {item?.tip && <div className={styles.dataTip}>{item?.tip}</div>}
+            </div>
             {!item?.allImg && (
-              <React.Fragment>
-                <div className={styles.dataTitle}>{item?.title}</div>
-                <div className={styles.dataDesc}>{item?.desc}</div>
+              <div className={styles.textContainer}>
+                <div>
+                  <div className={styles.dataTitle}>{item?.title}</div>
+                  <div className={styles.dataDesc}>{item?.desc}</div>
+                </div>
                 <div className={styles.price}>
                   <div className={styles.realPrice}>¥{item?.realPrice}</div>
                   <div className={styles.originalPrice}>¥{item?.originalPrice}</div>
                 </div>
-              </React.Fragment>
+              </div>
             )}
           </div>
         ))}
