@@ -17,6 +17,7 @@ const data = [
     title: '轻井泽(文三路店）',
     hotValue: 2,
     account: 163,
+    totalAccount: 420,
     type: '西餐',
     place: '文三路',
     tip: '积分兑换',
@@ -28,6 +29,7 @@ const data = [
     title: '轻井泽(文三路店）',
     hotValue: 2,
     account: 163,
+    totalAccount: 420,
     type: '西餐',
     place: '文三路文三路文三路文三路文三路文三路文三路文三路',
     tip: '积分兑换',
@@ -39,6 +41,7 @@ const data = [
     title: '轻井泽(文三路店）',
     hotValue: 2,
     account: 163,
+    totalAccount: 420,
     type: '西餐',
     place: '文三路',
     tip: '积分兑换',
@@ -59,6 +62,7 @@ const ListColumnGroupPage: FC<PageProps> = () => {
                 <Fires value={item?.hotValue} />
                 <div className={styles.account}>¥{item?.account}/人</div>
               </div>
+              <div className={styles.totalAccount}>¥{item?.totalAccount}</div>
               <div className={styles.positions}>
                 <div>{item?.type}</div>
                 <div className={styles.place}>{item?.place}</div>

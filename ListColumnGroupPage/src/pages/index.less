@@ -5,12 +5,24 @@
     .am-list-body {
       border: none;
       border-radius: 16px;
+      padding: 0 24px;
+
     }
   }
 
+
+
+
   .dataContainer {
+
     display: flex;
-    padding: 24px;
+    border-bottom: 1px solid #eee;
+    padding: 24px 0px;
+
+    &:last-child {
+      border: none;
+    }
+
 
     .dataImg {
       width: 160px;
@@ -44,6 +56,13 @@
           line-height: 37px;
           padding-left: 4px;
         }
+      }
+
+      .totalAccount {
+        font-size: 36px;
+        font-weight: 500;
+        color: #FF3B30;
+        line-height: 50px;
       }
 
       .positions {
