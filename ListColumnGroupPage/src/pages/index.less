@@ -1,0 +1,82 @@
+.listColumnGroupStyle {
+  padding: 24px;
+
+  :global {
+    .am-list-body {
+      border: none;
+      border-radius: 16px;
+    }
+  }
+
+  .dataContainer {
+    display: flex;
+    padding: 24px;
+
+    .dataImg {
+      width: 160px;
+      height: 160px;
+      border-radius: 8px;
+    }
+
+    .rightContainer {
+      flex: 1;
+      padding-left: 24px;
+
+      &>div {
+        padding-bottom: 8px;
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 42px;
+      }
+
+      .valueAndAccount {
+        display: flex;
+        align-items: center;
+
+        .account {
+          font-size: 26px;
+          font-weight: 500;
+          color: #333333;
+          line-height: 37px;
+          padding-left: 4px;
+        }
+      }
+
+      .positions {
+        display: flex;
+        justify-content: space-between;
+        font-size: 26px;
+        font-weight: 400;
+        color: #999999;
+        line-height: 37px;
+
+        .place {
+          flex: 1;
+          padding-left: 8px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          width: 0;
+        }
+
+        .distance {
+          padding-left: 8px;
+        }
+      }
+
+      .tip {
+        font-size: 22px;
+        font-weight: 400;
+        color: #FF6010;
+        line-height: 30px;
+        padding: 0 4px;
+        background: #FFECE3;
+        border-radius: 4px;
+      }
+    }
+  }
+}
