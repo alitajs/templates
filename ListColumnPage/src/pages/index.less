@@ -1,0 +1,99 @@
+.container {
+  padding: 24px;
+
+  :global {
+    .am-list-item {
+      padding-left: 24px;
+      padding-right: 24px;
+      background-color: transparent;
+    }
+
+    .am-list-line {
+      padding-right: 0;
+    }
+
+    .am-list-content {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+
+    .am-list-body {
+      border: none;
+      border-radius: 16px;
+    }
+
+    .am-list-body div:not(:last-child) .am-list-line {
+      border-bottom: 1PX solid #eee;
+    }
+  }
+
+  .listItem {
+    display: flex;
+
+    .listImg {
+      width: 160px;
+      height: 160px;
+      flex-shrink: 0;
+      border-radius: 8px;
+    }
+
+    .itemContainer {
+      padding-left: 24px;
+      flex: 1;
+
+      .title {
+        font-size: 30px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 42px;
+        white-space: normal;
+        padding-bottom: 8px;
+      }
+
+      .tipList {
+        display: flex;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 400;
+        color: #999999;
+        line-height: 37px;
+
+        .tipItem {
+          padding-right: 8px;
+        }
+
+        .line {
+          width: 2px;
+          height: 20px;
+          background-color: #999;
+          margin-right: 8px;
+        }
+      }
+
+      .integral {
+        font-size: 22px;
+        font-weight: 400;
+        color: #FF6010;
+        line-height: 30px;
+        background: #FFECE3;
+        border-radius: 4px;
+      }
+
+      .sale {
+        font-size: 26px;
+        font-weight: 400;
+        color: #999999;
+        line-height: 37px;
+        margin-left: 9px;
+      }
+
+      .account {
+        font-size: 36px;
+        font-weight: 500;
+        color: #FF3B30;
+        line-height: 50px;
+        padding-top: 8px;
+      }
+    }
+  }
+}
