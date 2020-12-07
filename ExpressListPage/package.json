@@ -1,0 +1,37 @@
+{
+  "name": "@alitajs-templates/expresslist",
+  "version": "0.0.1",
+  "description": "快递列表",
+  "tplType": "商业及生活服务",
+  "tplSubType": "快递行业",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "物流快递查询",
+      "backgroundColor": "#1678ff",
+      "display": "flex",
+      "color": "#FFFFFF"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita",
+    "templates",
+    "ExpressListPage"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/ExpressListPage#readme",
+  "private": true
+}
