@@ -1,0 +1,122 @@
+.listStyle {
+  .title {
+    width: 100%;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .introduce {
+    width: 100%;
+    height:37px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 26px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 37px;
+    margin-top: 4px;
+  }
+
+  .free {
+    width: auto;
+    height: 42px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #FF3B30;
+    line-height: 42px;
+  }
+
+  .salePrice {
+    width: auto;
+    height: 50px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF3B30;
+    line-height: 50px;
+  }
+
+  .originPrice {
+    width: auto;
+    height: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #B3B3B3;
+    line-height: 30px;
+    margin-left: 8px;
+    text-decoration-line: line-through;
+  }
+
+  .originPrice {
+    width: auto;
+    height: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #B3B3B3;
+    line-height: 30px;
+    margin-left: 8px;
+    text-decoration-line: line-through;
+  }
+
+  .freePrice {
+    margin-top: 9px;
+  }
+
+  .normal {
+    margin-top: 3px;
+  }
+
+  :global {
+    .am-list {
+      border-radius: 16px;
+      background-color: #FFFFFF;
+      margin: 24px;
+      overflow: hidden;
+
+      .am-list-body {
+        border-top: none;
+        border-bottom: none;
+
+        .am-list-item:not(:last-child) {
+          border-bottom: 1px solid#EEEEEE;
+        }
+
+        .am-list-item {
+          padding-left: 0;
+          margin: 0 24px;
+
+          .am-list-line {
+            padding-right: 0;
+            border-bottom: none;
+
+            .am-list-content {
+              padding: 24px 0;
+            }
+          }
+
+          .am-list-thumb {
+            display: flex;
+            align-self: start;
+            padding-top: 24px;
+            margin-right: 24px;
+
+            img {
+              width: 136px;
+              height: 136px;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
