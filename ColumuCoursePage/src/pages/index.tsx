@@ -5,8 +5,7 @@ import styles from './index.less';
 interface PageProps {}
 
 const { Item } = List;
-const BgImg =
-  'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image';
+const BgImg = 'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image';
 
 const ColumuCoursePage: FC<PageProps> = () => {
   const data = [
@@ -85,7 +84,6 @@ const ColumuCoursePage: FC<PageProps> = () => {
             {data.map((val) => (
               <div key={val.id} className={styles.courseItem}>
                 <span className={styles.courseTitle}>{val.title}</span>
-
                 <span className={styles.courseContent}>{val.content}</span>
               </div>
             ))}
