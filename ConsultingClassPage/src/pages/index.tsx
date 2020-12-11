@@ -3,7 +3,6 @@ import { Button, Badge, Flex } from 'antd-mobile';
 import styles from './index.less';
 interface PageProps { }
 const ConsultingClassPage: FC<PageProps> = () => {
-  const [loading, setLoading] = useState<boolean>(true);
   //模拟数据
   const data = [
     { desc: '失眠多梦', hot: false },
