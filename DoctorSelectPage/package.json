@@ -1,7 +1,7 @@
 {
   "name": "@alitajs-templates/doctorselect",
   "version": "0.0.1",
-  "description": "@alitajs-templates/doctorselect",
+  "description": "我的医生",
   "tplType": "医疗行业",
   "tplSubType": "医生卡片",
   "main": "src/index.js",
