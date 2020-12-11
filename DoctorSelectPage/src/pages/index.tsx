@@ -4,7 +4,6 @@ import styles from './index.less';
 import addImg from '../../assets/add.png'
 interface PageProps {}
 const DoctorSelectPage: FC<PageProps> = () => {
-  const [loading, setLoading] = useState<boolean>(true);
   //模拟数据
   const data = [
     {
