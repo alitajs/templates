@@ -2,12 +2,12 @@
   "name": "@alitajs-templates/doctorselect",
   "version": "0.0.1",
   "description": "@alitajs-templates/doctorselect",
-  "tplType": "模版的分类，请修改",
-  "tplSubType": "模版的二级分类，请修改",
+  "tplType": "医疗行业",
+  "tplSubType": "医生卡片",
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "@alitajs-templates/doctorselect",
+      "title": "",
       "backgroundColor": "#FFFFFF",
       "display": "flex",
       "color": "#333333"
