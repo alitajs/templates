@@ -1,9 +1,8 @@
 import React, { FC, useState, useEffect } from 'react';
-import styles from './index.less';
 import { Grid } from 'antd-mobile';
+import styles from './index.less';
 import addImg from '../../assets/add.png'
-interface PageProps {
-}
+interface PageProps {}
 const DoctorSelectPage: FC<PageProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);
   //模拟数据
