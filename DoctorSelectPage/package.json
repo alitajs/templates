@@ -7,7 +7,7 @@
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "",
+      "title": " ",
       "backgroundColor": "#FFFFFF",
       "display": "flex",
       "color": "#333333"
