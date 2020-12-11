@@ -1,7 +1,7 @@
 {
   "name": "@alitajs-templates/consultingclass",
   "version": "0.0.1",
-  "description": "@alitajs-templates/consultingclass",
+  "description": "问答分类",
   "tplType": "医疗行业",
   "tplSubType": "咨询类",
   "main": "src/index.js",

@@ -1,8 +1,7 @@
 import React, { FC, useState, useEffect } from 'react';
 import { Button, Badge, Flex } from 'antd-mobile';
 import styles from './index.less';
-interface PageProps {
-}
+interface PageProps { }
 const ConsultingClassPage: FC<PageProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);
   //模拟数据
@@ -21,21 +20,9 @@ const ConsultingClassPage: FC<PageProps> = () => {
           justify='around'
           align="center" >
           {data.map((item, index) => {
-            return <Button key={index} className={styles.btn} ><span>{item.desc}{item.hot ? <Badge text="热" hot 
-            style={{
-              marginLeft: 8,
-              marginBottom:5,
-              padding: '1px',
-              backgroundColor: '#fff',
-              borderRadius: 5,
-              color: '#f19736',
-              border: '1px solid #FF6010',
-              height:'30px',
-              width:'25px',
-              fontSize:'22px',
-              fontWeight:400,
-              lineHeight:'30px'}} 
-            /> : ''}</span></Button>
+            return <Button key={index} className={styles.btn} >
+              <span>{item.desc}{item.hot ? <span className={styles.badge}>热</span> : ''}</span>
+            </Button>
           })}
         </Flex>
       </div>
