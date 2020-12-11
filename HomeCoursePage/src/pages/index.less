@@ -1,0 +1,421 @@
+.container {
+  .header {
+    height: 144px;
+    background-color: #168BFF;
+  }
+
+  .headerList {
+    background: #FFFFFF;
+    position: relative;
+
+    .headerListOriginImg {
+      width: 48px;
+      height: 48px;
+      margin: 0px 16px 24px 24px;
+    }
+
+    .headerListAipay {
+      height: 42px;
+      flex-grow: 1;
+      line-height: 42px;
+    }
+
+    .headerListAuthorImg {
+      width: 36px;
+      height: 36px;
+      margin: 24px 16px 24px 24px;
+      border-radius: 4px;
+    }
+
+    .headerListHeadsetImg {
+      width: 72px;
+      height: 72px;
+      background: #333333;
+      box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+      border-radius: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -8px;
+      right: 0;
+      z-index: 999;
+      overflow: auto;
+    }
+
+    .headerListTitle {
+      height: 42px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+      margin-left: 24px;
+      margin-bottom: 24px;
+    }
+
+    .headerListIntroduce {
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+      margin-left: 24px;
+    }
+
+    .headerListPastTime {
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+      margin-right: 24px;
+    }
+
+    .headerListCardTitle {
+      display: block;
+      width: calc(100% - 48px);
+      height: 68px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+      margin-left: 24px;
+      border-bottom: 1px solid #EEEEEE;
+    }
+
+    .headerListAuthor {
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 37px;
+    }
+
+    .headerListProfessional {
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+    }
+
+    :global {
+      .am-list-header {
+        font-size: 30px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 42px;
+        padding: 40px 0 16px 24px;
+        border-bottom: none !important;
+      }
+
+      .am-list-body {
+        border-top: none;
+        border-bottom: none;
+
+        .am-list-item {
+          padding-left: 0;
+          border-radius: 16px;
+          margin: 0 24px 24px 24px;
+          background: #F5F5F5;
+          overflow: unset !important;
+
+          .am-list-line {
+            padding-right: 0;
+            overflow: unset !important;
+
+            .am-list-content {
+              padding-top: 24px;
+              padding-bottom: 24px;
+
+              .am-flexbox {
+                width: 100%;
+              }
+            }
+
+            .am-list-arrow-horizontal {
+              position: absolute !important;
+              top: 30px;
+              right: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .courseGrid {
+    padding: 0 24px;
+
+    :global {
+      .am-grid-item-content {
+        padding-top: 24px !important;
+        padding-bottom: 24px !important;
+
+        .am-grid-item-inner-content {
+          img {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .courseTitle {
+    display: block;
+    height: 42px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 42px;
+    margin-left: 24px;
+    margin-bottom: 10px;
+  }
+
+  .listStyle {
+    padding-bottom: 24px;
+
+    .title {
+      width: 100%;
+      font-size: 30px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 42px;
+      overflow: hidden;
+      white-space: pre-wrap;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      margin-top: 16px;
+    }
+
+    .introduce {
+      width: 100%;
+      height: 37px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+      margin-top: 16px;
+    }
+
+    .videoType {
+      display: block;
+      width: 64px;
+      height: 40px;
+      background: #1677FF;
+      border-radius: 8px 4px 4px 4px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #FFFFFF;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    .play {
+      width: 36px;
+      height: 36px;
+      border-radius: 4px 0px 8px 0px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    .videoImg {
+      width: 200px;
+      height: 240px;
+      border-radius: 8px;
+    }
+
+    .author {
+      color: #333333;
+      font-size: 26px;
+      line-height: 37px;
+    }
+
+    .professional {
+      color: #999999;
+      font-size: 26px;
+      line-height: 37px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+
+    .vipImg {
+      height: 36px;
+      width: 25px;
+    }
+
+    .labelStyle {
+      width: auto;
+      height: 30px;
+      background: #FFECE3;
+      border-radius: 4px;
+      font-size: 22px;
+      font-weight: 400;
+      color: #FF6010;
+      line-height: 30px;
+      margin-top: 8px;
+      margin-right: 16px;
+      text-align: center;
+      padding: 0 4px;
+    }
+
+    .salePrice {
+      height: 50px;
+      font-size: 36px;
+      font-weight: 500;
+      color: #FF3B30;
+      line-height: 50px;
+      margin-right: 8px;
+    }
+
+    .originPrice {
+      height: 30px;
+      font-size: 22px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 30px;
+      text-decoration-line: line-through;
+      flex-grow: 1;
+    }
+
+    .integral {
+      display: block;
+      width: auto;
+      height: 42px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+      flex-grow: 1;
+    }
+
+    .integralNum {
+      display: block;
+      width: auto;
+      height: 50px;
+      font-size: 36px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 50px;
+      margin-right: 4px;
+    }
+
+    .useIntegral {
+      display: none;
+    }
+
+    .useMoney {
+      display: none;
+    }
+
+    .subscribeNum {
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+    }
+
+    .free {
+      width: auto;
+      height: 42px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #FF3B30;
+      line-height: 42px;
+      flex-grow: 1;
+    }
+
+    .audition {
+      width: 100%;
+      height: 106px;
+      background: #F5F5F5;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 16px;
+
+      >span {
+        display: block;
+        height: 74px;
+        overflow: hidden;
+        font-size: 26px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 37px;
+        white-space: pre-wrap;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+
+        .auditionFontStyle {
+          font-weight: 500;
+          padding-right: 16px;
+        }
+      }
+    }
+
+    .hiddenAudition {
+      display: none;
+    }
+
+    :global {
+      .am-list {
+        border-radius: 16px;
+        background-color: #FFFFFF;
+        margin: 24px 24px 0 24px;
+        overflow: hidden;
+
+        .am-list-body {
+          border-top: none;
+          border-bottom: none;
+
+          .am-list-item:not(:last-child) {
+            border-bottom: 1px solid#EEEEEE;
+          }
+
+          .am-list-item {
+            margin: 0 24px;
+            padding: 24px 0;
+
+            .am-list-line {
+              padding-right: 0;
+              border-bottom: none;
+
+              .am-list-content {
+                padding: 0;
+                height: 100%;
+              }
+            }
+
+            .am-list-thumb {
+              display: flex;
+              align-self: start;
+              margin-right: 24px;
+            }
+          }
+        }
+      }
+
+      .am-flexbox {
+        width: 100%;
+      }
+    }
+  }
+}
