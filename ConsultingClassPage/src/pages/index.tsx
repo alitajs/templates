@@ -1,14 +1,8 @@
 import React, { FC, useState, useEffect } from 'react';
 import { Button, Badge, Flex } from 'antd-mobile';
 import styles from './index.less';
-
-
 interface PageProps {
 }
-
-
-
-
 const ConsultingClassPage: FC<PageProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);
   //模拟数据
@@ -20,8 +14,6 @@ const ConsultingClassPage: FC<PageProps> = () => {
     { desc: '2型糖尿病', hot: false },
     { desc: '皮肤过敏', hot: false },
   ]
-
-
   return (
     <div className={styles.center}>
       <div className={styles.headBtns}>
@@ -42,21 +34,12 @@ const ConsultingClassPage: FC<PageProps> = () => {
               width:'25px',
               fontSize:'22px',
               fontWeight:400,
-              lineHeight:'30px'
-            }} 
+              lineHeight:'30px'}} 
             /> : ''}</span></Button>
           })}
         </Flex>
-
-
-
-
-
-
       </div>
     </div>
   );
 };
-
-
 export default ConsultingClassPage;

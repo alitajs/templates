@@ -7,7 +7,7 @@
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "@alitajs-templates/consultingclass",
+      "title": " ",
       "backgroundColor": "#FFFFFF",
       "display": "flex",
       "color": "#333333"
