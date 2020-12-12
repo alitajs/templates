@@ -1,0 +1,38 @@
+{
+  "name": "@alitajs-templates/homeretailerslist",
+  "version": "0.0.1",
+  "description": "电商展示列表型-版本2",
+  "tplType": "电商零售",
+  "tplSubType": "电商门户",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "商品展示",
+      "backgroundColor": "rgb(22, 120, 255)",
+      "display": "flex",
+      "color": "#fff"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita",
+    "templates",
+    "HomeRetailersListPage"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)",
+    "hang1017 <437132124@qq.com> (https://github.com/hang1017)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/HomeRetailersListPage#readme",
+  "private": true
+}
