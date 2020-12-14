@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC } from 'react';
 import { Grid } from 'antd-mobile';
 import styles from './index.less';
 import addImg from '../../assets/add.png'
