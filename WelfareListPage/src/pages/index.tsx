@@ -2,10 +2,9 @@ import React, { FC } from 'react';
 import { List, Flex, Slider } from 'antd-mobile';
 import styles from './index.less';
 
-interface PageProps {}
+interface PageProps { }
 const { Item } = List;
-const BgImg =
-  'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image';
+const BgImg = 'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image';
 
 const WelfareListPage: FC<PageProps> = () => {
   const data = [
@@ -18,6 +17,7 @@ const WelfareListPage: FC<PageProps> = () => {
       label: ['环境保护'],
       introduceLabel: '',
       progress: '',
+      bottom: '',
     },
     {
       id: 2,
@@ -28,6 +28,7 @@ const WelfareListPage: FC<PageProps> = () => {
       label: ['耳蜗植入', '贫困患儿'],
       introduceLabel: '',
       progress: '',
+      bottom: '',
     },
     {
       id: 3,
@@ -38,6 +39,7 @@ const WelfareListPage: FC<PageProps> = () => {
       label: [''],
       introduceLabel: '',
       progress: '74%',
+      bottom: '区块链-善款追溯',
     },
   ];
   return (
@@ -47,68 +49,54 @@ const WelfareListPage: FC<PageProps> = () => {
           <Item key={val.id}>
             <Flex align="start">
               <img src={BgImg} alt="BgImg.png" className={styles.listImg} />
-              <Flex direction="column" align="start">
-                <span className={styles.title}>{val.title}</span>
-                <span className={styles.introduce}>{val.introduce}</span>
-                <span className={styles.heartNum}>{val.heartNum}</span>
-                <div>
-                {val.progress && (
-                   
-                    <Slider
-                      defaultValue={74}
-                      min={0}
-                      max={100}
-                      trackStyle={{
-                        backgroundColor: 'red',
-                        height: '5px',
-                      }}
-                      railStyle={{
-                        backgroundColor: 'blue',
-                        height: '5px',
-                      }}
-                      handleStyle={{
-                        borderColor: 'blue',
-                        height: '14px',
-                        width: '314px',
-                        marginLeft: '-7px',
-                        marginTop: '-4.5px',
-                        backgroundColor: 'blue',
-                      }}
-                    />
-                    
-                )}
-                </div>
-                <Flex>
-                  {val.label.map((val, index) => (
-                    <div key={index} className={styles.labelStyle}>
-                      {val}
-                    </div>
-                  ))}
-                </Flex>
-                
+              <Flex direction="column" align="start" justify="start" wrap="wrap">
+                <Flex.Item>
+                  <span className={styles.title}>{val.title}</span>
+                  <span className={styles.introduce}>{val.introduce}</span>
+                  <div>
+                    {val.progress && (
+                      <Slider
+                        defaultValue={74}
+                        min={0}
+                        max={100}
+                        trackStyle={{
+                          backgroundColor: '#FF3B30',
+                          height: '0.08rem',
+                          borderRadius: '0.04rem',
+                          marginTop: '0.06rem',
+                        }}
+                        railStyle={{
+                          backgroundColor: '#EEEEEE',
+                          borderRadius: '0.04rem',
+                          marginTop: '0.06rem',
+                          height: '0.08rem',
+                        }}
+                        handleStyle={{
+                          display: 'none',
+                        }}
+                      />
+                    )}
+                  </div>
+                  <Flex justify="between">
+                    <span className={val.progress ? styles.heartNumHasProgress : styles.heartNum}>
+                      {val.heartNum}
+                    </span>
+                    <span className={styles.progress}>{val.progress}</span>
+                  </Flex>
+                  <Flex>
+                    {val.label.map((val, index) => (
+                      <div
+                        key={index}
+                        className={val ? styles.labelStyle : styles.hiddenLabelStyle}
+                      >
+                        {val}
+                      </div>
+                    ))}
+                  </Flex>
+                  <span className={styles.bottom}>{val.bottom}</span>
+                </Flex.Item>
               </Flex>
             </Flex>
-            <Slider
-            defaultValue={26}
-            min={0}
-            max={30}
-            trackStyle={{
-              backgroundColor: 'red',
-              height: '5px',
-            }}
-            railStyle={{
-              backgroundColor: 'blue',
-              height: '5px',
-            }}
-            handleStyle={{
-              borderColor: 'blue',
-              height: '14px',
-              width: '14px',
-              marginLeft: '-7px',
-              marginTop: '-4.5px',
-              backgroundColor: 'blue',
-            }}
-          />
           </Item>
         ))}
       </List>

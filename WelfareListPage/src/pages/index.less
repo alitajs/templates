@@ -1,6 +1,4 @@
 .listStyle {
-
-
   .listImg {
     width: 160px;
     height: 160px;
@@ -9,6 +7,7 @@
   }
 
   .title {
+    display: block;
     font-size: 30px;
     font-weight: 500;
     color: #333333;
@@ -17,20 +16,31 @@
   }
 
   .introduce {
+    display: block;
     white-space: pre-wrap;
     font-size: 26px;
     font-weight: 400;
     color: #999999;
     line-height: 37px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 
   .heartNum {
+    display: block;
     font-size: 26px;
     font-weight: 500;
     color: #FF3B30;
     line-height: 37px;
-    margin-bottom: 8px;
+    margin-top: 6px;
+  }
+
+  .heartNumHasProgress {
+    display: block;
+    font-size: 26px;
+    font-weight: 500;
+    color: #FF3B30;
+    line-height: 37px;
+    margin-top: 20px;
   }
 
   .labelStyle {
@@ -44,12 +54,30 @@
     line-height: 30px;
     text-align: center;
     margin-right: 16px;
+    margin-top: 10px;
   }
 
-  .sliderStyle{
-
-
+  .hiddenLabelStyle {
+    display: none;
   }
+
+  .progress {
+    font-size: 26px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 37px;
+    margin-top: 20px;
+  }
+
+  .bottom {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    color: #1677FF;
+    line-height: 37px;
+    margin-top: 16px;
+  }
+
   :global {
     .am-list {
       padding: 24px;
@@ -57,10 +85,23 @@
       .am-list-body {
         border-radius: 16px;
         overflow: hidden;
+        border-top: none;
+        border-bottom: none;
 
-        .am-list-content {
-          padding: 24px 0 !important;
+        .am-list-item {
+          margin-right: 24px;
 
+          .am-list-line {
+            padding-right: 0;
+
+            .am-list-content {
+              padding: 24px 0 !important;
+
+              .am-slider-wrapper {
+                margin-top: 6px;
+              }
+            }
+          }
         }
       }
     }
