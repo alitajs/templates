@@ -1,0 +1,113 @@
+.container {
+  .header {
+    background-color: #1678ff;
+    height: 242px;
+    width: 100%;
+    padding: 40px 24px;
+    position: relative;
+
+    .searchExpress {
+      display: block;
+      width: 90px;
+      height: 42px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #FFFFFF;
+      line-height: 42px;
+      margin-bottom: 24px;
+    }
+
+    .scanImg {
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      right: 24px;
+    }
+
+    :global {
+      .ant-input-affix-wrapper {
+        height: 96px;
+        border-radius: 16px;
+
+        .ant-input {
+          display: flex;
+          width: calc(100% - 76px);
+          height: 42px;
+          font-size: 30px !important;
+          font-weight: 400;
+          line-height: 42px;
+          align-self: center;
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+
+  :global {
+    .am-list-header {
+      padding-top: 40px;
+      padding-left: 24px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+
+      .ant-btn {
+        height: 100%;
+        padding: 0;
+
+        span {
+          display: flex;
+          align-self: center;
+          font-size: 26px;
+          font-weight: 400;
+          color: #999999;
+        }
+      }
+    }
+
+    .am-list-body {
+      margin-left: 24px;
+      margin-right: 24px;
+      overflow: hidden;
+      border-radius: 16px;
+
+      .am-list-item {
+        padding-left: 0;
+        margin-left: 24px;
+        height: 138px;
+        border-bottom: 2px solid #EEEEEE;
+
+        .am-list-thumb {
+          margin-right: 24px;
+
+          img {
+            width: 72px;
+            height: 72px;
+          }
+        }
+
+        .am-list-line {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .title {
+    width: auto;
+    height: 48px;
+    font-size: 34px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 48px;
+  }
+
+  .expressOrderNumber {
+    width: auto;
+    height: 42px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 42px;
+  }
+}

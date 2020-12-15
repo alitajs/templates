@@ -1,0 +1,216 @@
+.container {
+  .placeList {
+    .placeListImg {
+      width: 56px;
+      height: 56px;
+      margin-right: 24px;
+    }
+
+    .placeListTitle {
+      width: auto;
+      font-weight: 400;
+      color: #333333;
+    }
+
+    .checkPlace {
+      width: auto;
+      font-size: 34px;
+      font-weight: 400;
+      color: #1677FF;
+      line-height: 48px;
+      margin-right: 24px;
+      border: none;
+    }
+
+    .InputItemStyle {
+      height: 96px;
+
+      &::after {
+        content: "";
+        height: 1px;
+        width: calc(100% - 28px);
+        background-color: #ddd;
+        position: absolute;
+        left: 0;
+        top: 94px;
+        left: 28px;
+      }
+
+      :global {
+        .am-input-extra {
+          .ant-btn {
+            height: 48px;
+            padding: 0 0 0 24px;
+
+            span {
+              position: relative;
+
+              &::before {
+                content: '';
+                height: 44px;
+                width: 2px;
+                background-color: #EEEEEE;
+                position: absolute;
+                top: 2px;
+                left: -24px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .receivePlace {
+      :global {
+        .am-list-line {
+          border-bottom: none;
+        }
+
+        .am-input-extra {
+          overflow: visible;
+
+          .ant-btn {
+            height: 48px;
+            padding: 0 0 0 24px;
+
+            span {
+              position: relative;
+
+              &::before {
+                content: '';
+                height: 44px;
+                width: 2px;
+                background-color: #EEEEEE;
+                position: absolute;
+                top: 2px;
+                left: -24px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    :global {
+      .am-list-item {
+        padding-left: 0;
+        margin-left: 12px;
+
+        .am-list-line {
+          padding-right: 0;
+          border-bottom: none;
+
+          .am-list-content {
+            padding-top: 0;
+            padding-bottom: 0;
+
+            .am-input-label {
+              width: 148px;
+              margin-right: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bannerImg {
+    width: 100%;
+    height: 288px;
+    margin-top: 24px;
+  }
+
+  .bottomPay {
+    position: fixed;
+    width: 100%;
+    height: 168px;
+    background: #FFFFFF;
+    bottom: 0;
+
+    .payWord {
+      display: inline-block;
+      width: 150px;
+      height: 42px;
+      font-size: 30px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 42px;
+      margin-top: 33px;
+      margin-left: 24px;
+    }
+
+    .payNum {
+      display: inline-block;
+      width: 81px;
+      height: 64px;
+      font-size: 50px;
+      color: #F65200;
+      line-height: 60px;
+      margin-top: 16px;
+    }
+
+    .agreeRadio {
+      height: 44px;
+      font-size: 30px;
+      display: flex;
+
+      :global {
+        .am-radio {
+          width: 44px;
+          height: 44px;
+          border: 1px solid #ccc;
+          border-radius: 50%;
+          margin-left: 24px;
+
+          .am-radio-inner:after {
+            top: 3px;
+            right: 14px;
+          }
+        }
+      }
+    }
+
+    .agreeWord {
+      height: 100%;
+      width: 60px;
+      font-size: 30px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 42px;
+      margin-left: 16px;
+      display: flex;
+      align-self: center;
+    }
+
+    .agreementBtn {
+      width: 286px;
+      height: 100%;
+      font-size: 30px;
+      font-weight: 400;
+      color: #1677FF;
+      line-height: 42px;
+      padding: 0;
+      text-align: start;
+      display: flex;
+      align-self: center;
+    }
+
+    .submitBtn {
+      width: 240px;
+      height: 98px;
+      background: #1677FF;
+      border-radius: 8px;
+      position: absolute;
+      bottom: 35px;
+      right: 24px;
+
+      span {
+        height: 98px;
+        font-size: 36px;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 98px;
+      }
+    }
+  }
+}

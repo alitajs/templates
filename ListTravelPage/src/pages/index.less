@@ -1,0 +1,67 @@
+.container {
+  .listImg {
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+    margin-right: 24px;
+  }
+
+  .title {
+    height: 42px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 42px;
+    margin-bottom: 8px;
+  }
+
+  .labelName {
+    display: block;
+    height: 40px;
+    background: #FFECE3;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FF6010;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 16px;
+    padding: 0 8px;
+  }
+
+  .labelIntroduce {
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 37px;
+  }
+
+  .labelFlex:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  :global {
+    .am-list-body {
+      margin: 24px;
+      border-radius: 16px;
+      overflow: hidden;
+      border-top: none;
+      border-bottom: none;
+
+      .am-list-item {
+        padding-left: 24px;
+        margin-right: 24px;
+
+        .am-list-line {
+          padding-right: 0;
+
+          .am-list-content {
+            padding-top: 24px;
+            padding-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+}

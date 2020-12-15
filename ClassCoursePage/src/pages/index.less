@@ -1,0 +1,62 @@
+.container {
+  background-color: #FFFFFF;
+
+  .carouselStyle {
+    padding: 24px;
+  }
+
+  .gridStyle {
+
+    :global {
+      .am-grid-item-content {
+
+        .am-flexbox {
+          padding: 0 24px;
+        }
+      }
+
+      .am-grid {
+        .am-flexbox-item:not(:nth-of-type(3)) {
+          .am-flexbox {
+            border-right: 1px solid #EEEEEE;
+          }
+        }
+      }
+    }
+
+    .gridImg {
+      width: 72px;
+      height: 72px;
+      margin-bottom: 24px;
+    }
+
+    .title {
+      height: 42px;
+      font-size: 30px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 42px;
+    }
+
+    .addMarginTitle {
+      height: 42px;
+      font-size: 30px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 42px;
+      margin-bottom: 24px;
+    }
+
+    .introduce {
+      height: 34px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 34px;
+    }
+
+    .hiddenIntroduce {
+      display: none;
+    }
+  }
+}
