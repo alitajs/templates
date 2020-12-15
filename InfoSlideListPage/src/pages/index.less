@@ -1,0 +1,143 @@
+.container {
+  position: relative;
+
+  .addImg {
+    width: 10%;
+    height: 87px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 9999;
+
+    img {
+      width: 34px;
+      height: 35px;
+      margin-top: 28px;
+      margin-left: 8px;
+    }
+  }
+
+  :global {
+    .am-tabs-default-bar-tab {
+      font-size: 34px;
+    }
+
+    .am-tabs-default-bar-tab-active {
+      font-size: 34px;
+      font-weight: 500;
+      color: #1677FF;
+    }
+
+    .am-tabs-default-bar-underline {
+      width: 8.8% !important;
+      margin-left: 5.5%;
+      height: 4px;
+      background: #1677FF;
+      border-radius: 2px;
+    }
+
+    .am-tabs-default-bar {
+      width: 94%;
+    }
+
+    .am-list-body {
+      border-top: none;
+      border-bottom: none;
+
+      .am-list-item {
+        padding-left: 24px;
+        margin-right: 24px;
+
+        .am-list-line {
+          padding-right: 0px;
+
+          .am-list-content {
+            padding-top: 24px;
+            padding-bottom: 24px;
+          }
+
+          .am-list-arrow {
+            position: absolute;
+            top: 35px;
+            right: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .headerImg {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+  }
+
+  .headerTitle {
+    height: 42px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 42px;
+  }
+
+  .newsContent {
+    margin-top: 24px;
+
+    .title {
+      height: 42px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+
+    .introduce {
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+      overflow: hidden;
+    }
+
+    .newsLeftContent {
+      width: calc(210% - 8px);
+      margin-right: 8px;
+
+      .leftImg {
+        width: 100%;
+        height: 280px;
+        background: #CCCCCC;
+        border-radius: 16px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .newsRightContent {
+      width: calc(100% - 8px);
+      margin-left: 8px;
+
+      .rightImg {
+        width: 100%;
+        height: 280px;
+        margin-bottom: 16px;
+        border-radius: 16px;
+      }
+    }
+  }
+
+  .footer {
+    height: 133px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #CCCCCC;
+    line-height: 37px;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+}
