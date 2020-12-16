@@ -16,6 +16,7 @@ const DataItem: FC<DataItemProps> = ({ data = [] }) => {
         <div className={styles.dataItem}>
           <div className={styles.dataImg}>
             <img src={item?.img} alt="" className={styles.itemImg} />
+            <div className={styles.itemTip}>{item?.tip}</div>
           </div>
           <div className={styles.itemTitle}>
             <div>{item?.title}</div>
