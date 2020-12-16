@@ -10,6 +10,7 @@ const BgImg =
 
 const data = [
   {
+    id: '1',
     img: BgImg,
     title: '小林寿司阿里高级餐厅',
     subTitle: '天妇罗套餐',
@@ -17,6 +18,7 @@ const data = [
     tip: '热卖',
   },
   {
+    id: '2',
     img: BgImg,
     title: '新记茶餐厅高级餐厅',
     subTitle: '天妇罗套餐',
@@ -24,6 +26,7 @@ const data = [
     tip: '热卖',
   },
   {
+    id: '3',
     img: BgImg,
     title: '神田川高级餐厅',
     subTitle: '天妇罗套餐',
@@ -34,9 +37,9 @@ const data = [
 const ListColumnsPage: FC<PageProps> = () => {
   return (
     <div className={styles.listColumnsContainer}>
-      <DataItem data={data} />
+      <DataItem data={data} itemClick={(e) => console.log(e)} />
       <WhiteSpace size="lg" />
-      <DataItem data={data} />
+      <DataItem data={data} itemClick={(e) => console.log(e)} />
     </div>
   );
 };
