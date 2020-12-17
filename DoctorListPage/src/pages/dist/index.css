@@ -1,0 +1,58 @@
+.ListStyle {
+  margin: 24px;
+}
+.ListStyle :global .am-list-body {
+  border-radius: 16px;
+  overflow: hidden;
+  border-top: none;
+  border-bottom: none;
+}
+.ListStyle :global .am-list-body .am-list-item {
+  padding-left: 24px;
+}
+.ListStyle :global .am-list-body .am-list-item .am-list-thumb {
+  margin-bottom: 24px;
+  margin-right: 24px;
+  height: 100% !important;
+}
+.ListStyle :global .am-list-body .am-list-item .am-list-thumb img {
+  width: 104px;
+  height: 104px;
+}
+.ListStyle :global .am-list-body .am-list-item .am-list-line {
+  padding-right: 24px;
+}
+.ListStyle :global .am-list-body .am-list-item .am-list-line .am-list-content {
+  padding: 24px 0px;
+}
+.ListStyle .doctorName {
+  height: 42px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 42px;
+  margin-right: 4px;
+}
+.ListStyle .doctorIdentity {
+  height: 42px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 42px;
+}
+.ListStyle .place {
+  height: 37px;
+  font-size: 26px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 37px;
+  margin-bottom: 8px;
+}
+.ListStyle .treatmentContent {
+  height: 37px;
+  font-size: 26px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 37px;
+  overflow: hidden;
+}

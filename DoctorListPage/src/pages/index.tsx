@@ -8,18 +8,20 @@ const AvatarImg = 'https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/15aff4461dc
 
 const DoctorListPage: FC<PageProps> = () => {
   return (
-    <List className={styles.ListStyle}>
-      <Item thumb={AvatarImg}>
-        <Flex direction="column" align="start">
-          <Flex style={{ marginBottom: '0.08rem' }}>
-            <span className={styles.doctorName}>张豆豆</span>
-            <span className={styles.doctorIdentity}>主任医生</span>
+    <div className={styles.ListStyle}>
+      <List>
+        <Item thumb={AvatarImg}>
+          <Flex direction="column" align="start">
+            <Flex style={{ marginBottom: '0.08rem' }}>
+              <span className={styles.doctorName}>张豆豆</span>
+              <span className={styles.doctorIdentity}>主任医生</span>
+            </Flex>
+            <span className={styles.place}>北京协和医院 骨科</span>
+            <span className={styles.treatmentContent}>擅长: 儿童及成人内分泌疾病, 甲状腺疾病</span>
           </Flex>
-          <span className={styles.place}>北京协和医院 骨科</span>
-          <span className={styles.treatmentContent}>擅长: 儿童及成人内分泌疾病, 甲状腺疾病</span>
-        </Flex>
-      </Item>
-    </List>
+        </Item>
+      </List>
+    </div>
   );
 };
 

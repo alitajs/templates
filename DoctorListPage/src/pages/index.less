@@ -1,6 +1,38 @@
 .ListStyle {
   margin: 24px;
 
+  :global {
+    .am-list-body {
+      border-radius: 16px;
+      overflow: hidden;
+      border-top: none;
+      border-bottom: none;
+
+      .am-list-item {
+        padding-left: 24px;
+
+        .am-list-thumb {
+          margin-bottom: 24px;
+          margin-right: 24px;
+          height: 100% !important;
+
+          img {
+            width: 104px;
+            height: 104px;
+          }
+        }
+
+        .am-list-line {
+          padding-right: 24px;
+
+          .am-list-content {
+            padding: 24px 0px;
+          }
+        }
+      }
+    }
+  }
+
   .doctorName {
     height: 42px;
     font-size: 30px;
@@ -34,37 +66,5 @@
     color: #999999;
     line-height: 37px;
     overflow: hidden;
-  }
-
-  :global {
-    .am-list-body {
-      border-radius: 16px;
-      overflow: hidden;
-
-      .am-list-item {
-        padding-left: 24px;
-        display: flex;
-        align-items: start;
-
-        .am-list-thumb {
-          margin-top: 24px;
-          margin-right: 24px;
-          height: 100% !important;
-
-          img {
-            width: 104px;
-            height: 104px;
-          }
-        }
-
-        .am-list-line {
-          padding-right: 24px;
-
-          .am-list-content {
-            padding: 24px 0px;
-          }
-        }
-      }
-    }
   }
 }
