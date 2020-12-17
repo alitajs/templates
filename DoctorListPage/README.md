@@ -1,1 +1,0 @@
-# @alitajs-templates/DoctorListPage

@@ -1,9 +1,9 @@
 {
-  "name": "@alitajs-templates/doctorlist",
+  "name": "@alitajs-templates/hospitalselect",
   "version": "0.0.1",
-  "description": "医生列表",
+  "description": "医院切换",
   "tplType": "医疗行业",
-  "tplSubType": "医生卡片",
+  "tplSubType": "医院卡片",
   "main": "src/index.js",
   "template": {
     "navbar": {
@@ -25,13 +25,13 @@
     "umi",
     "alita",
     "templates",
-    "DoctorListPage"
+    "HospitalSelectPage"
   ],
   "authors": [
     "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
-  "homepage": "https://github.com/alitajs/templates/tree/master/DoctorListPage#readme",
+  "homepage": "https://github.com/alitajs/templates/tree/master/HospitalSelectPage#readme",
   "private": true
 }
