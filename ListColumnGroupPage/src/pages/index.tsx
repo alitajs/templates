@@ -1,9 +1,7 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC } from 'react';
 import { List } from 'antd-mobile';
 import { Fires } from '../components';
 import styles from './index.less';
-
-const { Item } = List;
 
 interface PageProps {}
 
