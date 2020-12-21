@@ -1,9 +1,20 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC } from 'react';
 import Masonry from 'react-masonry-component';
 import { Button } from 'antd-mobile';
 import styles from './index.less';
 
 interface PageProps {}
+
+interface DataProps {
+  id: string | number;
+  img: string;
+  title: string;
+  subTitle?: string;
+  btnFlag?: boolean;
+  avatar?: string;
+  highLight?: string;
+  footList?: string[];
+}
 
 const BgImg =
   'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image';
@@ -40,13 +51,13 @@ const data = [
     btnFlag: true,
     footList: ['233个收藏', '性价比最高'],
   },
-];
+] as DataProps[];
 
 const ListWaterfallPage: FC<PageProps> = () => {
   return (
     <div className={styles.listWaterfallStyle}>
       <Masonry elementType="div" style={{ margin: '0.16rem' }}>
-        {data.map((item) => (
+        {data.map((item: DataProps) => (
           <div key={item?.id} className={styles.itemStyle} onClick={() => console.log(item)}>
             <img src={item?.img} alt="" className={styles.itemImg} />
             <div className={styles.contentStyle}>
@@ -71,7 +82,7 @@ const ListWaterfallPage: FC<PageProps> = () => {
               <div className={styles.footStyle}>
                 {item?.avatar && <img src={item?.avatar} alt="" className={styles.avatarImg} />}
                 {item?.footList &&
-                  item?.footList.map((foot) => (
+                  item?.footList.map((foot: string) => (
                     <span key={foot} className={styles.footList}>
                       {foot}
                     </span>
