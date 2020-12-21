@@ -1,7 +1,7 @@
 {
   "name": "@alitajs-templates/homeretailerslist",
   "version": "0.0.1",
-  "description": "电商展示列表型-版本2",
+  "description": "电商展示列表型",
   "tplType": "电商零售",
   "tplSubType": "电商门户",
   "main": "src/index.js",
