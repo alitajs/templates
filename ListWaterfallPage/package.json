@@ -1,16 +1,16 @@
 {
-  "name": "@alitajs-templates/homeretailerslist",
+  "name": "@alitajs-templates/listwaterfall",
   "version": "0.0.1",
-  "description": "电商展示列表型",
+  "description": "瀑布流布局",
   "tplType": "电商零售",
-  "tplSubType": "电商门户",
+  "tplSubType": "列表页",
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "商品展示",
-      "backgroundColor": "rgb(22, 120, 255)",
+      "title": "瀑布流布局",
+      "backgroundColor": "#FFFFFF",
       "display": "flex",
-      "color": "#fff"
+      "color": "#333333"
     },
     "backgroundColor": "#F5F5F5"
   },
@@ -25,14 +25,13 @@
     "umi",
     "alita",
     "templates",
-    "HomeRetailersListPage"
+    "ListWaterfallPage"
   ],
   "authors": [
-    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)",
-    "hang1017 <437132124@qq.com> (https://github.com/hang1017)"
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
-  "homepage": "https://github.com/alitajs/templates/tree/master/HomeRetailersListPage#readme",
+  "homepage": "https://github.com/alitajs/templates/tree/master/ListWaterfallPage#readme",
   "private": true
 }
