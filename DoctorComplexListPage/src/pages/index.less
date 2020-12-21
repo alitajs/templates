@@ -1,0 +1,147 @@
+.ListStyle {
+  margin: 24px;
+
+  :global {
+    .am-list-body {
+      border-radius: 16px;
+      overflow: hidden;
+      border-top: none;
+      border-bottom: none;
+
+      .am-list-item {
+        padding-left: 24px;
+        margin-right: 24px;
+
+        .am-list-thumb {
+          margin-right: 24px;
+          height: 100% !important;
+          display: flex;
+          align-self: start;
+          margin-top: 24px;
+
+          img {
+            width: 104px;
+            height: 104px;
+          }
+        }
+
+        .am-list-line {
+          padding-right: 0;
+
+          .am-list-content {
+            padding: 24px 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .doctorName {
+    height: 42px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 42px;
+    margin-right: 4px;
+  }
+
+  .doctorIdentity {
+    height: 42px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 42px;
+  }
+
+  .place {
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 37px;
+    margin-bottom: 8px;
+  }
+
+  .treatmentContent {
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 37px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    padding: 0 2px;
+    border-radius: 4px;
+    height: 30px;
+    background-color: #FFFFFF,
+  }
+
+  .labelIntroduce {
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 35px;
+    margin-left: 4px;
+    margin-right: 24px;
+  }
+
+  .StarImg {
+    width: 28px;
+    height: 27px;
+    margin-right: 6px;
+  }
+
+  .StarNum {
+    width: 45px;
+    height: 37px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #00CAAB;
+    margin-right: 8px;
+    line-height: 37px;
+  }
+
+  .comment {
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 37px;
+  }
+
+  .price {
+    width: 48px;
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #FF3B30;
+    line-height: 37px;
+    margin-right: 8px;
+  }
+
+  .service {
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 37px;
+    padding-right: 24px;
+    margin-right: 24px;
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: '';
+      width: 1px;
+      height: 24px;
+      background: #DDDDDD;
+      border-radius: 3px;
+      position: absolute;
+      top: 8px;
+      right: 0;
+    }
+  }
+}

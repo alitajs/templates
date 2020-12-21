@@ -1,0 +1,95 @@
+.listStyle {
+  .title {
+    width: 100%;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    font-size: 34px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .updateTime {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 42px;
+  }
+
+  :global {
+    .am-list {
+      border-radius: 16px;
+      background-color: #FFFFFF;
+      margin: 24px;
+      overflow: hidden;
+
+      .am-list-header {
+        padding: 24px;
+
+        .am-button {
+          width: auto;
+          height: 40px;
+          background: #FFFFFF;
+          border-radius: 4px;
+          padding: 0;
+          line-height: 0;
+          margin-right: 24px;
+
+          span {
+            display: block;
+            width: auto;
+            height: 40px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 38px;
+            margin: auto 8px;
+          }
+        }
+      }
+
+      .am-list-body {
+        border-bottom: none;
+
+        .am-list-item:not(:last-child) {
+          border-bottom: 1px solid#EEEEEE;
+        }
+
+        .am-list-item {
+          padding-left: 0;
+          margin: 0 24px;
+
+          .am-list-line {
+            padding-right: 0;
+            border-bottom: none;
+
+            .am-list-content {
+              padding: 24px 0;
+            }
+          }
+
+          .am-list-thumb {
+            display: flex;
+            align-self: start;
+            padding-top: 29px;
+            margin-right: 24px;
+
+            img {
+              height: 80px;
+              width: 80px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

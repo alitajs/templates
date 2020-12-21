@@ -1,0 +1,38 @@
+{
+  "name": "@alitajs-templates/listcolumn",
+  "version": "0.0.1",
+  "description": "单列商品-版本2",
+  "tplType": "电商零售",
+  "tplSubType": "列表页",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "单列商品",
+      "backgroundColor": "#FFFFFF",
+      "display": "flex",
+      "color": "#333333"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita",
+    "templates",
+    "ListColumnPage"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)",
+    "hang1017 <437132124@qq.com> (https://github.com/hang1017)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/ListColumnPage#readme",
+  "private": true
+}

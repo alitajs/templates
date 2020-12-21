@@ -1,0 +1,83 @@
+.container {
+  .listStyle {
+    background: #FFFFFF;
+    padding: 24px;
+    position: relative;
+
+    .listOrigin {
+      display: inline-block;
+      width: 90px;
+      height: 42px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+    }
+
+    .listImg {
+      width: 48px;
+      height: 48px;
+      margin-right: 16px;
+    }
+
+    .listIntroduce {
+      width: 100%;
+      height: 42px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+      margin: 24px 0;
+    }
+
+    .listTitle {
+      width: 260px;
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+    }
+
+    .pastTime {
+      width: auto;
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+    }
+
+    :global {
+      .am-list-body {
+        overflow: hidden;
+        border-radius: 16px;
+        padding: 24px;
+        background: #F5F5F5;
+
+        .am-list-item {
+          padding-left: 0;
+          background: #F5F5F5;
+
+          .am-list-line {
+            padding-right: 0;
+
+            .am-list-content {
+              padding: 0;
+
+              .am-flexbox {
+                width: 100%;
+              }
+            }
+
+            .am-list-arrow {
+              position: absolute;
+              top: 14px;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
