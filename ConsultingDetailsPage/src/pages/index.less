@@ -1,0 +1,122 @@
+.container {
+  .listStyle {
+    margin: 26px 24px 24px 24px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    .AvatarImg {
+      width: 72px;
+      height: 72px;
+      margin-top: 40px;
+      margin-bottom: 100px;
+    }
+
+    .flexStyle {
+      width: calc(100% - 94px);
+      margin-left: 94px;
+
+      .bgImg {
+        width: 100%;
+        height: 128px;
+        border-radius: 8px;
+      }
+
+      :global {
+        .am-flexbox-item:not(:first-child) {
+          margin-left: 24px;
+        }
+      }
+    }
+
+    .author {
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+      margin-right: 16px;
+      padding-right: 16px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 24px;
+        background: #CCCCCC;
+        top: 8px;
+        right: 0;
+      }
+    }
+
+    .date {
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+    }
+
+    .questionContent {
+      height: 84px;
+      font-size: 30px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 42px;
+      margin-top: 16px;
+    }
+
+    .tooltipStyle {
+      width: 120px !important;
+
+      :global {
+        .ant-tooltip {
+          width: 120px !important;
+
+          .ant-tooltip-content {
+            height: 132px !important;
+            width: 120px !important;
+
+            .ant-tooltip-inner {
+              width: 120px !important;
+              height: 132px !important;
+            }
+          }
+        }
+      }
+    }
+
+    :global {
+      .am-list-body {
+        padding: 24px;
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+  }
+
+  :global {
+    .ant-tooltip-arrow {
+      overflow: unset;
+      left: 11px;
+      top: 30px;
+      z-index: -1;
+
+      span {
+        width: 24px;
+        height: 24px;
+        box-shadow: unset;
+      }
+    }
+
+    .ant-tooltip-inner {
+      border-radius: 8px !important;
+      z-index: 666;
+      box-shadow: unset;
+
+      span {
+        box-shadow: unset;
+      }
+    }
+  }
+}
