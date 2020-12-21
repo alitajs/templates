@@ -12,7 +12,12 @@ const Files: FC<FilesProps> = ({ value = 0 }) => {
   return (
     <div className={styles.fireContainer}>
       {[1, 2, 3, 4, 5].map((item: number) => (
-        <img src={item <= value ? ActiveFirePng : GrayFirePng} alt="" className={styles.fireImg} />
+        <img
+          key={item}
+          src={item <= value ? ActiveFirePng : GrayFirePng}
+          alt=""
+          className={styles.fireImg}
+        />
       ))}
     </div>
   );
