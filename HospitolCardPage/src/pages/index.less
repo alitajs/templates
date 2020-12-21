@@ -1,0 +1,182 @@
+.container {
+  position: relative;
+
+  .NailImg {
+    width: 50px;
+    height: 55px;
+    position: absolute;
+    right: 48px;
+    top: -10px;
+    z-index: 9999;
+  }
+
+  .card {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
+    border-radius: 16px;
+    margin: 24px;
+    position: relative;
+    overflow: hidden;
+
+    .dotStyleTop {
+      position: absolute;
+      width: 172px;
+      height: 48px;
+      border-radius: 25px;
+      background: rgba(0, 0, 0, 0.03);
+      top: 40px;
+      left: -26px;
+
+      span {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 16px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 48px;
+        opacity: 1;
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          background: #FF8F1F;
+          border-radius: 50%;
+          position: absolute;
+          top: 21px;
+          left: 42px;
+        }
+      }
+    }
+
+    .dotStyleBottom {
+      position: absolute;
+      width: 172px;
+      height: 48px;
+      border-radius: 25px;
+      background: rgba(0, 0, 0, 0.03);
+      top: 104px;
+      left: -26px;
+
+      span {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 16px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 48px;
+        opacity: 1;
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          background: #00B578;
+          border-radius: 50%;
+          position: absolute;
+          top: 21px;
+          left: 42px;
+        }
+      }
+    }
+
+    .AvatarImg {
+      width: 120px;
+      height: 120px;
+      margin-top: 40px;
+      margin-bottom: 24px;
+    }
+
+    .hospitalName {
+      height: 42px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+    }
+
+    .treatmentContent {
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+    }
+
+    :global {
+      .am-flexbox:nth-child(1) {
+        height: 311px;
+      }
+    }
+
+    .dividerLine {
+      width: calc(100% - 48px);
+      height: 1px;
+      background: #EEEEEE;
+      margin: 40px 24px 0px 24px;
+    }
+  }
+
+  .PlaceImgBg {
+    width: 48px;
+    height: 48px;
+    background: #00B578;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 8px;
+
+    .PlaceImg {
+      width: 30px;
+      height: 32px;
+    }
+  }
+
+  .PhoneImgBg {
+    width: 48px;
+    height: 48px;
+    background: #1677FF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32px;
+    margin-right: 8px;
+
+    .PhoneImg {
+      width: 30px;
+      height: 32px;
+    }
+  }
+
+  .InfoImgBg {
+    width: 48px;
+    height: 48px;
+    background: #FF8F1F;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32px;
+    margin-right: 8px;
+
+    .InfoImg {
+      width: 30px;
+      height: 32px;
+    }
+  }
+
+  .labelText {
+    display: inline;
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 37px;
+  }
+}
