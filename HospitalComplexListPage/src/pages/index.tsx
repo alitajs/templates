@@ -2,10 +2,9 @@ import React, { FC } from 'react';
 import { List, Flex } from 'antd-mobile';
 import styles from './index.less';
 
-interface PageProps {}
+interface PageProps { }
 const { Item } = List;
-const BgImg =
-  'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image';
+const BgImg = 'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image';
 
 const HospitalComplexListPage: FC<PageProps> = () => {
   return (
@@ -24,9 +23,11 @@ const HospitalComplexListPage: FC<PageProps> = () => {
         </Flex>
       </Item>
       <Item>
-        <Flex justify="between" style={{marginBottom:'0.09rem'}}>
+        <Flex justify="between" style={{ marginBottom: '0.09rem' }}>
           <span className={styles.salePrice}>￥8658</span>
-          <span className={styles.service}>[HPV宫颈癌疫苗]3次接种服务套餐服务内容内容内容内容内容内容</span>
+          <span className={styles.service}>
+            [HPV宫颈癌疫苗]3次接种服务套餐服务内容内容内容内容内容内容
+          </span>
         </Flex>
         <Flex justify="between">
           <span className={styles.originPrice}>门市价:￥11200</span>
