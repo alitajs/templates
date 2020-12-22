@@ -11,7 +11,7 @@ const BgImg = 'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490
 const HealthyDevicePage: FC<PageProps> = () => {
   return (
     <List className={styles.listStyle}>
-      <Item thumb={<img src={BgImg} alt="BgImg.png" className={styles.BgImg} />}>
+      <Item thumb={<img src={BgImg} alt="BgImg.png" className={styles.bgImg} />}>
         <Flex justify="between">
           <Flex direction="column" align="start">
             <span className={styles.title}>步数</span>
@@ -20,7 +20,7 @@ const HealthyDevicePage: FC<PageProps> = () => {
           <span className={styles.exponent}>28008</span>
         </Flex>
       </Item>
-      <Item thumb={<img src={BgImg} alt="BgImg.png" className={styles.BgImg} />}>
+      <Item thumb={<img src={BgImg} alt="BgImg.png" className={styles.bgImg} />}>
         <Flex justify="between">
           <Flex direction="column" align="start">
             <span className={styles.title}>血糖mmol/L</span>
