@@ -1,5 +1,5 @@
 {
-  "name": "@alitajs-templates/hospitolcard",
+  "name": "@alitajs-templates/hospitalcard",
   "version": "0.0.1",
   "description": "医院名片",
   "tplType": "医疗行业",
@@ -25,13 +25,13 @@
     "umi",
     "alita",
     "templates",
-    "HospitolCardPage"
+    "HospitalCardPage"
   ],
   "authors": [
     "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
-  "homepage": "https://github.com/alitajs/templates/tree/master/HospitolCardPage#readme",
+  "homepage": "https://github.com/alitajs/templates/tree/master/HospitalCardPage#readme",
   "private": true
 }
