@@ -1,0 +1,37 @@
+{
+  "name": "@alitajs-templates/homegroup",
+  "version": "0.0.1",
+  "description": "点评团购类首页",
+  "tplType": "电商零售",
+  "tplSubType": "餐饮点单",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "商品展示",
+      "backgroundColor": "#FFFFFF",
+      "display": "flex",
+      "color": "#333333"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita",
+    "templates",
+    "HomeGroupPage"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/HomeGroupPage#readme",
+  "private": true
+}

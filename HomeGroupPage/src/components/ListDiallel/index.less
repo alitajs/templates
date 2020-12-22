@@ -1,0 +1,35 @@
+.listDiallelStyle {
+  background-color: #F5F5F5;
+  padding: 24px;
+
+  .listContainer {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+
+    .dataItem {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 16px;
+      padding: 40px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .title {
+        font-size: 30px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 42px;
+      }
+
+      .desc {
+        padding-top: 8px;
+        font-size: 26px;
+        font-weight: 400;
+        color: #999999;
+        line-height: 37px;
+      }
+    }
+  }
+}

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { FC } from 'react';
 import Masonry from 'react-masonry-component';
 import { Button } from 'antd-mobile';
