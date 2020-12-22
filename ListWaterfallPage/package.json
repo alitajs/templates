@@ -1,0 +1,37 @@
+{
+  "name": "@alitajs-templates/listwaterfall",
+  "version": "0.0.1",
+  "description": "瀑布流布局",
+  "tplType": "电商零售",
+  "tplSubType": "列表页",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "瀑布流布局",
+      "backgroundColor": "#FFFFFF",
+      "display": "flex",
+      "color": "#333333"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita",
+    "templates",
+    "ListWaterfallPage"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/ListWaterfallPage#readme",
+  "private": true
+}

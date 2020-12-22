@@ -10,7 +10,7 @@ interface PageProps {}
 const AvatarImg =
   'https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/15aff4461dc24644bda745276d49bd74~tplv-k3u1fbpfcp-watermark.image';
 
-const HospitolCardPage: FC<PageProps> = () => {
+const HospitalCardPage: FC<PageProps> = () => {
   return (
     <div className={styles.container}>
       <img src={NailImg} alt="NailImg.png" className={styles.NailImg} />
@@ -60,4 +60,4 @@ const HospitolCardPage: FC<PageProps> = () => {
   );
 };
 
-export default HospitolCardPage;
+export default HospitalCardPage;
