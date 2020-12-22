@@ -1,0 +1,66 @@
+.listStyle {
+  margin: 24px;
+  border-radius: 16px;
+  overflow: hidden;
+
+  .HospitalName {
+    height: 42px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 42px;
+    margin-bottom: 8px;
+  }
+
+  .subject {
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 16px;
+    line-height: 37px;
+  }
+
+  .label {
+    height: 30px;
+    padding: 0 4px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #FF6010;
+    line-height: 30px;
+    background: #FFECE3;
+    border-radius: 4px;
+    margin-right: 12px;
+
+  }
+
+  :global {
+
+    .am-list-body {
+      border-top: none;
+      border-bottom: none;
+
+      .am-list-item {
+        padding-left: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+
+        .am-list-thumb {
+          margin-right: 24px;
+
+          img {
+            width: 160px;
+            height: 160px;
+            border-radius: 8px;
+          }
+        }
+
+        .am-list-content {
+          padding-top: 0px !important;
+          padding-bottom: 0px !important;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
