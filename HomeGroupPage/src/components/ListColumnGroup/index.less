@@ -1,12 +1,37 @@
 .listColumnGroupStyle {
   padding: 24px;
 
+  .renderHeaderStyle {
+    display: flex;
+    align-items: center;
+
+    .title {
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+    }
+
+    .subTitle {
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+      padding-left: 24px;
+    }
+  }
+
   :global {
     .am-list-body {
       border: none;
-      border-radius: 16px;
+      border-radius: 0 0 16px 16px;
       padding: 0 24px;
+    }
 
+    .am-list-header {
+      background-color: #fff;
+      border-radius: 16px 16px 0 0;
+      border-bottom: 1px solid #EEEEEE;
     }
   }
 
@@ -19,7 +44,6 @@
     &:last-child {
       border: none;
     }
-
 
     .dataImg {
       width: 160px;

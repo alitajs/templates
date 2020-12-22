@@ -1,0 +1,80 @@
+.container {
+  padding: 24px;
+
+  .listStyle {
+    margin-bottom: 24px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    :global {
+      .am-list-body {
+        border-top: none;
+        border-bottom: none;
+
+        .am-list-item {
+          padding-left: 24px;
+
+          .am-list-line {
+            padding-right: 24px;
+
+            .am-list-content {
+              padding: 24px 0;
+            }
+          }
+        }
+      }
+    }
+
+    .question {
+      display: block;
+      height: 84px;
+      font-size: 30px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 42px;
+      white-space: pre-line;
+      margin-bottom: 40px;
+    }
+
+    .watchNum {
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+      margin-right: 16px;
+      padding-right: 16px;
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 1px;
+        height: 24px;
+        background-color: #CCCCCC;
+        border-radius: 5px;
+        position: absolute;
+        top: 8px;
+        right: 0;
+      }
+    }
+
+    .goodNum {
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+    }
+
+    .label {
+      height: 40px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #00B578;
+      line-height: 40px;
+      padding: 0 8px 3px 8px;
+      background: #D4FFF1;
+      border-radius: 4px;
+    }
+  }
+}
