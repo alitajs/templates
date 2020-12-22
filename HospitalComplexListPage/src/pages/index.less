@@ -1,0 +1,132 @@
+.listStyle {
+  margin: 24px;
+  border-radius: 16px;
+  overflow: hidden;
+
+  .HospitalName {
+    height: 42px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 42px;
+    margin-bottom: 8px;
+  }
+
+  .distance {
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 16px;
+    line-height: 37px;
+    margin-right: 16px;
+    padding-right: 16px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: #DDDDDD;
+      width: 1px;
+      height: 24px;
+      top: 8px;
+      right: 0;
+    }
+  }
+
+  .placeName {
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 16px;
+    line-height: 37px;
+  }
+
+  .label {
+    height: 30px;
+    padding: 0 4px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #FF6010;
+    line-height: 30px;
+    background: #FFECE3;
+    border-radius: 4px;
+    margin-right: 12px;
+  }
+
+  .salePrice{
+    height: 50px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF3B30;
+    line-height: 50px;
+    margin-right: 61px;
+  }
+
+  .service{
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 37px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .originPrice{
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 37px;
+    
+  }
+
+  .payPeopleNum{
+    height: 37px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 37px;    
+  }
+
+  :global {
+
+    .am-list-body {
+      border-top: none;
+      border-bottom: none;
+
+      .am-list-item {
+        padding: 24px 0 24px 0;
+        margin: 0 24px;
+
+        &:not(:nth-of-type(2n)){
+            border-bottom: 1px solid #EEEEEE;
+        }
+
+        .am-list-thumb {
+          margin-right: 24px;
+
+          img {
+            width: 160px;
+            height: 160px;
+            border-radius: 8px;
+          }
+        }
+
+        .am-list-line {
+          border-bottom: none;
+          padding-right: 0;
+
+          .am-list-content {
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
