@@ -1,0 +1,91 @@
+.container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 24px;
+  height: 348px;
+  width: calc(100% - 48px);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .flexStyle {
+    min-width: 33.3%;
+    height: 100%;
+    float: left;
+    display: flex;
+
+    .flexItemStyle {
+      min-width: 280px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 3;
+      background-color: #FFFFFF;
+      border-radius: 16px;
+
+      &:not(:last-of-type) {
+        margin-right: 16px;
+      }
+    }
+
+    .avatarImg {
+      width: 120px;
+      height: 120px;
+      margin-top: 40px;
+      margin-bottom: 24px;
+    }
+
+    .name {
+      height: 42px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+      margin-right: 4px;
+    }
+
+    .position {
+      height: 42px;
+      font-size: 30px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 42px;
+    }
+
+    .hospitalName {
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 37px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+
+    .starImg {
+      width: 32px;
+      height: 32px;
+      margin-right: 5px;
+    }
+
+    .starNum {
+      height: 37px;
+      font-size: 26px;
+      font-weight: 500;
+      color: #00CAAB;
+      line-height: 37px;
+      margin-right: 8px;
+    }
+
+    .praise {
+      height: 37px;
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+    }
+  }
+}
