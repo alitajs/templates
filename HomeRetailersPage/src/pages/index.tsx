@@ -217,7 +217,7 @@ const HomeRetailersPage: FC<PageProps> = () => {
         <ListColumn data={listColumnData} itemClick={(e) => console.log(e)} />
       </Card>
       <Card title="模块标题">
-        <VedioProduct data={vedioProductData} />
+        <VedioProduct data={vedioProductData} itemClick={(e) => console.log(e)} />
       </Card>
       <Card
         title="模块标题"
