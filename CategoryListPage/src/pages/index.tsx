@@ -2,7 +2,7 @@
 import React, { FC, useState } from 'react';
 import { SearchBar, Carousel, List } from 'antd-mobile';
 import classnames from 'classnames';
-import { FoodItem } from '../components';
+import { FoodItem, FoodDataProps } from '../components';
 import styles from './index.less';
 
 const { Item } = List;
@@ -39,6 +39,7 @@ const CategoryListPage: FC<PageProps> = () => {
   const [activeCategoryId, setactiveCategoryId] = useState<string | number>('category-1'); // 当前类目
   const [listenCategoryId, setListenCategoryId] = useState<string | number>(); // 监听点击的类目id
   const [touchFlag, setTouchFlag] = useState<boolean>(true); // false: 点击类目，true: 右侧滚动移动
+  const [selectFoodValue, setSelectFoodValue] = useState({}); // 选中食物的数量
 
   /**
    * 左侧类目点击事件
@@ -73,6 +74,39 @@ const CategoryListPage: FC<PageProps> = () => {
         setListenCategoryId('');
       }
     });
+  };
+
+  /**
+   * 加减食物点击事件
+   */
+  const operClick = (data: FoodDataProps, categoryId: string | number, type: 'add' | 'reduce') => {
+    let newFoodValue = {};
+    if (!selectFoodValue[`${categoryId}-${data?.id}`]) {
+      newFoodValue = {
+        ...selectFoodValue,
+        [`${categoryId}-${data?.id}`]: {
+          quantity: 1,
+          categoryId,
+        },
+      };
+    } else if (type === 'add') {
+      newFoodValue = {
+        ...selectFoodValue,
+        [`${categoryId}-${data?.id}`]: {
+          quantity: selectFoodValue[`${categoryId}-${data?.id}`].quantity + 1,
+          categoryId,
+        },
+      };
+    } else if (type === 'reduce') {
+      newFoodValue = {
+        ...selectFoodValue,
+        [`${categoryId}-${data?.id}`]: {
+          quantity: selectFoodValue[`${categoryId}-${data?.id}`].quantity - 1,
+          categoryId,
+        },
+      };
+    }
+    setSelectFoodValue(newFoodValue);
   };
 
   return (
@@ -119,27 +153,36 @@ const CategoryListPage: FC<PageProps> = () => {
       </div>
       <div className={styles.allProductStyle} id="allProductId">
         <div className={styles.leftList} onTouchStart={() => setTouchFlag(false)}>
-          {categoryList.map((item) => (
-            <div
-              key={item.categoryId}
-              className={styles.categoryContent}
-              onClick={() => categoryClick(item?.categoryId)}
-            >
-              {item.categoryId === activeCategoryId && (
-                <div className={styles.activeLine}>
-                  <div className={styles.line} />
-                </div>
-              )}
+          {categoryList.map((item) => {
+            let num = 0;
+            Object.keys(selectFoodValue).forEach((it: string) => {
+              if (it.indexOf(item.categoryId) !== -1) {
+                num += selectFoodValue[it]?.quantity;
+              }
+            });
+            return (
               <div
-                className={classnames({
-                  [styles.categoryName]: true,
-                  [styles.categoryNameActive]: item.categoryId === activeCategoryId,
-                })}
+                key={item.categoryId}
+                className={styles.categoryContent}
+                onClick={() => categoryClick(item?.categoryId)}
               >
-                {item?.name}
+                {item.categoryId === activeCategoryId && (
+                  <div className={styles.activeLine}>
+                    <div className={styles.line} />
+                  </div>
+                )}
+                <div
+                  className={classnames({
+                    [styles.categoryName]: true,
+                    [styles.categoryNameActive]: item.categoryId === activeCategoryId,
+                  })}
+                >
+                  {item?.name}
+                </div>
+                {num > 0 && <div className={styles.val}>{num}</div>}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
         <div
           className={styles.rightList}
@@ -148,11 +191,18 @@ const CategoryListPage: FC<PageProps> = () => {
         >
           {categoryList.map((categoryItem) => (
             <List key={categoryItem.categoryId} id={`categoryId-${categoryItem.categoryId}`}>
-              {categoryItem.data.map((item) => (
-                <Item>
-                  <FoodItem data={item} categoryId={categoryItem.categoryId} />
-                </Item>
-              ))}
+              {categoryItem.data.map((item) => {
+                return (
+                  <Item key={`${categoryItem.categoryId}-${item?.id}`}>
+                    <FoodItem
+                      data={item}
+                      categoryId={categoryItem.categoryId}
+                      operClick={operClick}
+                      foodValue={selectFoodValue}
+                    />
+                  </Item>
+                );
+              })}
             </List>
           ))}
         </div>
