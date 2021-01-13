@@ -1,0 +1,79 @@
+.dataItemContainer {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #fff;
+  border-radius: 16px;
+
+  .dataItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &>div {
+      padding-bottom: 8px;
+    }
+
+    .dataImg {
+      position: relative;
+
+      .itemImg {
+        width: 100%;
+        height: 160px;
+        border-radius: 8px;
+      }
+
+      .itemTip {
+        position: absolute;
+        bottom: 8px;
+        left: 0px;
+        background: #FF6010;
+        border-radius: 4px;
+        font-size: 22px;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 30px;
+        padding: 0 4px;
+      }
+    }
+
+    .itemTitle {
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+      padding-bottom: 2px;
+
+      div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .itemSubTitle {
+      font-size: 26px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 37px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .itemDesc {
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+      padding-bottom: 0px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+  }
+}

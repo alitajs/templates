@@ -1,0 +1,101 @@
+.listColumnsWrongStyle {
+
+  .listContainer {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #fff;
+    border-radius: 16px;
+
+    .dataItem {
+      display: flex;
+      flex-direction: column;
+
+      .imgContainer {
+        width: 100%;
+        height: 160px;
+        position: relative;
+
+        .dataImg {
+          width: 100%;
+          height: 100%;
+          border-radius: 8px;
+        }
+
+        .dataTip {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 0 4px;
+          background: #FF6010;
+          border-radius: 4px;
+          font-size: 22px;
+          font-weight: 400;
+          color: #FFFFFF;
+          line-height: 30px;
+        }
+      }
+
+      .fullHeight {
+        height: 100%;
+      }
+
+      .textContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+
+        .dataTitle {
+          font-size: 30px;
+          font-weight: 500;
+          color: #333333;
+          line-height: 42px;
+          padding-top: 8px;
+          text-overflow: -o-ellipsis-lastline;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+
+        .dataDesc {
+          font-size: 26px;
+          font-weight: 400;
+          color: #999999;
+          line-height: 37px;
+          padding-bottom: 2px;
+          text-overflow: -o-ellipsis-lastline;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+
+        .price {
+          display: flex;
+          align-items: center;
+
+          .realPrice {
+            font-size: 36px;
+            font-weight: 500;
+            color: #FF3B30;
+            line-height: 50px;
+          }
+
+          .originalPrice {
+            font-size: 22px;
+            font-weight: 400;
+            color: #B3B3B3;
+            line-height: 30px;
+            padding-left: 8px;
+            text-decoration: line-through;
+          }
+        }
+      }
+
+    }
+  }
+}
