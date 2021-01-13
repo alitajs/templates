@@ -25,7 +25,7 @@ const HalfMoney: FC<HalfMoneyProps> = ({ data = [], itemClick }) => {
           </div>
           <div className={styles.priceDiv}>
             <div className={styles.nowPrice}>¥{item?.nowPrice}</div>
-            <div className={styles.originalPrice}>{item?.originalPrice}</div>
+            <div className={styles.originalPrice}>¥{item?.originalPrice}</div>
           </div>
         </div>
       ))}

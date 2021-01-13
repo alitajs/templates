@@ -37,7 +37,7 @@ const VedioProduct: FC<VedioProductProps> = ({ data = [], itemClick }) => {
             <div className={styles.subTitle}>{item?.subTitle}</div>
             <div className={styles.priceDiv}>
               <div className={styles.nowPrice}>¥{item?.nowPrice}</div>
-              <div className={styles.originalPrice}>{item?.originalPrice}</div>
+              <div className={styles.originalPrice}>¥{item?.originalPrice}</div>
             </div>
           </div>
         );

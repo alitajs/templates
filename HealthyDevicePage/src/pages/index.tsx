@@ -2,11 +2,12 @@ import React, { FC } from 'react';
 import { List, Flex } from 'antd-mobile';
 import styles from './index.less';
 import AddImg from '../../assets/addImg.png';
-import CombinedImg from '../../assets/combinedImg.png';
+import CombinedImg from '../../assets/CombinedImg.png';
 
-interface PageProps { }
+interface PageProps {}
 const { Item } = List;
-const BgImg = 'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image';
+const BgImg =
+  'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1c66e30d15d2490db49471e43393af32~tplv-k3u1fbpfcp-watermark.image';
 
 const HealthyDevicePage: FC<PageProps> = () => {
   return (
