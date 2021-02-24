@@ -1,0 +1,90 @@
+.foodItemStyle {
+  display: flex;
+
+  .foodImg {
+    width: 136px;
+    height: 136px;
+    border-radius: 16px;
+    flex-shrink: 0;
+  }
+
+  .foodContent {
+    padding-left: 24px;
+    flex: 1;
+    width: 0;
+
+    &>div {
+      padding-bottom: 8px;
+    }
+
+    .title {
+      height: auto;
+      font-size: 30px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 42px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      flex-wrap: wrap;
+      word-break: break-all;
+      width: 100%;
+      white-space: normal;
+    }
+
+    .subTitle {
+      font-size: 26px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 37px;
+    }
+
+    .tipStyle {
+      background: #FFECE3;
+      border-radius: 4px;
+      padding: 0 4px;
+      font-size: 22px;
+      font-family: PingFangSC-Regular,
+        PingFang SC;
+      font-weight: 400;
+      color: #FF6010;
+      line-height: 30px;
+      display: table;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 8px;
+
+      .money {
+        font-size: 36px;
+        font-weight: 500;
+        color: #FF3B30;
+        line-height: 50px;
+      }
+
+      .oper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .num {
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .addImg {
+          width: 38px;
+          height: 38px;
+        }
+      }
+    }
+  }
+
+}
