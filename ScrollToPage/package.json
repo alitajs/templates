@@ -1,0 +1,37 @@
+{
+  "name": "@alitajs-templates/scrollto",
+  "version": "0.0.1",
+  "description": "锚点滚动视图",
+  "tplType": "通用",
+  "tplSubType": "滚动页面",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "滚动页",
+      "backgroundColor": "#FFFFFF",
+      "display": "flex",
+      "color": "#333333"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita",
+    "templates",
+    "ScrollToPage"
+  ],
+  "authors": [
+    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/ScrollToPage#readme",
+  "private": true
+}
