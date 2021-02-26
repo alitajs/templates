@@ -2,12 +2,12 @@
   "name": "@alitajs-templates/scrollto",
   "version": "0.0.1",
   "description": "锚点滚动视图",
-  "tplType": "通用",
-  "tplSubType": "滚动页面",
+  "tplType": "政企类",
+  "tplSubType": "锚点",
   "main": "src/index.js",
   "template": {
     "navbar": {
-      "title": "滚动页",
+      "title": "点锚点滚动",
       "backgroundColor": "#FFFFFF",
       "display": "flex",
       "color": "#333333"
