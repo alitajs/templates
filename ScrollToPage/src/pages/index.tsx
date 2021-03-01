@@ -43,9 +43,17 @@ const ScrollToPage: FC<PageProps> = () => {
 
   const scrollIntoView = (item: any) => {
     setScrollToId(item.id);
-    document.querySelector(`#${item.id}`)?.scrollIntoView({
-      behavior: 'smooth',
-    });
+    // 通过caniuse查询，scrollIntoView大部分支持良好，在UC for android上不支持 以下方式解决兼容性问题
+    const idDom = document.querySelector(`#${item.id}`);
+    if (idDom?.scrollIntoView) {
+      idDom?.scrollIntoView({
+        behavior: 'smooth',
+      });
+    } else {
+      const y = idDom?.getBoundingClientRect().top || 0;
+      // 这里是用滚动区域dom元素进行滚动的
+      window.scrollTo(0, y);
+    }
   };
 
   return (
@@ -58,23 +66,24 @@ const ScrollToPage: FC<PageProps> = () => {
       >
         {data.map((item) => {
           return (
-            <div
+            <a
               key={item.id}
               className={classnames({
                 [`${styles.item}`]: true,
                 [`${styles.active}`]: scrollToId === item.id,
               })}
-              onClick={() => {
+              onClick={(e) => {
                 scrollIntoView(item);
               }}
             >
               {item.label}
-            </div>
+            </a>
           );
         })}
       </div>
       {data.map((item) => {
         return (
+          //
           <div key={item.id} id={item.id} className={styles.card}>
             {item.label}
           </div>
