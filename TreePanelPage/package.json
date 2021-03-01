@@ -1,0 +1,37 @@
+{
+  "name": "@alitajs-templates/treepanelpage",
+  "version": "0.0.1",
+  "description": "政企类树状结构折叠面板",
+  "tplType": "政企类",
+  "tplSubType": "折叠面板",
+  "main": "src/index.js",
+  "template": {
+    "navbar": {
+      "title": "折叠面板",
+      "backgroundColor": "#FFFFFF",
+      "display": "flex",
+      "color": "#333333"
+    },
+    "backgroundColor": "#F5F5F5"
+  },
+  "scripts": {
+    "dev": "alita dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/templates"
+  },
+  "keywords": [
+    "umi",
+    "alita",
+    "templates",
+    "TreePanelPage"
+  ],
+  "authors": [
+    "LimMem <1270253618@qq.com> (https://github.com/LimMem)"
+  ],
+  "license": "MIT",
+  "bugs": "http://github.com/alitajs/templates/issues",
+  "homepage": "https://github.com/alitajs/templates/tree/master/TreePanelPage#readme",
+  "private": true
+}
