@@ -1,14 +1,13 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC, useState } from 'react';
 import styles from './index.less';
 import { data } from '../../assets/data';
 
 interface PageProps {}
 
-const CollapsePanel: FC<PageProps> = () => {
+const TreeCollapsePanel: FC<PageProps> = () => {
   const [treeData, setTreeData] = useState(data);
-  useEffect(() => {}, []);
 
-  const renderCollapsePanel = (data1: any[] = []) => {
+  const treeCollapsePanel = (data1: any[] = []) => {
     return data1.map((item) => {
       return (
         <div className={styles.collapseItem} key={item.id}>
@@ -27,14 +26,14 @@ const CollapsePanel: FC<PageProps> = () => {
             <span className={styles.title}> {item.name}</span>
           </div>
           {!!item.isOpen && item.children && item.children.length > 0
-            ? renderCollapsePanel(item.children)
+            ? treeCollapsePanel(item.children)
             : ''}
         </div>
       );
     });
   };
 
-  return <div className={styles.center}>{renderCollapsePanel(treeData)}</div>;
+  return <div className={styles.center}>{treeCollapsePanel(treeData)}</div>;
 };
 
-export default CollapsePanel;
+export default TreeCollapsePanel;

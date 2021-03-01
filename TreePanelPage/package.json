@@ -1,7 +1,7 @@
 {
   "name": "@alitajs-templates/treepanelpage",
   "version": "0.0.1",
-  "description": "@alitajs-templates/treepanelpage",
+  "description": "政企类树状结构折叠面板",
   "tplType": "政企类",
   "tplSubType": "折叠面板",
   "main": "src/index.js",
@@ -28,7 +28,7 @@
     "TreePanelPage"
   ],
   "authors": [
-    "xiaohuoni <448627663@qq.com> (https://github.com/xiaohuoni)"
+    "LimMem <1270253618@qq.com> (https://github.com/LimMem)"
   ],
   "license": "MIT",
   "bugs": "http://github.com/alitajs/templates/issues",
